@@ -69,7 +69,7 @@
           link += 'indicators/' + item.id
         }
         if(item.type === 'profile') {
-          link += 'indicators/' + item.id
+          link += 'profiles/' + item.id
         }
         window.open(link);
       }
