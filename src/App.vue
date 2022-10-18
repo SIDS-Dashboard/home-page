@@ -5,7 +5,9 @@
       <interfaces/>
       <video-block/>
       <resources/>
+      <subscribe/>
       <about/>
+      <root-footer/>
     </v-main>
   </v-app>
 </template>
@@ -16,16 +18,20 @@ import interfaces from './components/interfaces';
 import videoBlock from './components/video';
 import resources from './components/resources';
 import About from './components/About/About.vue';
+import rootFooter from './components/footer.vue';
+import subscribe from './components/subscribe.vue';
 
 export default {
   name: 'App',
 
   components: {
+    subscribe,
     rootHeader,
     interfaces,
     videoBlock,
     resources,
-    About
+    About,
+    rootFooter
   },
 
   data: () => ({
@@ -36,8 +42,8 @@ export default {
 <style media="screen">
 @import './assets/font.css';
 @import './assets/styles.css';
-body {
+body, .v-application {
   font-family: "Proxima Nova", sans-serif !important;
-  background-color: #1E1E1E;
+  background-color: #f4f4f4 !important;
 }
 </style>

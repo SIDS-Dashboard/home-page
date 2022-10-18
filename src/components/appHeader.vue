@@ -1,48 +1,60 @@
 <template>
-  <div class="full-block top-block_bg">
-    <a class="top-block_logo logo">
-      <img class="logo_image" src="~@/assets/media/logo.png" alt=""/>
-    </a>
-    <div class="top-block_content top-content">
-      <h1 class="top-content_header text-center">Small Island Developing States<br/>Data Platform</h1>
-      <div class="top-content-chips text-center">
-        <span class="top-content-chips_chip">Climate Action</span>
-        <span class="top-content-chips_chip">Blue Economy</span>
-        <span class="top-content-chips_chip top-content-chips_chip-last">Digital Transformation</span>
-      </div>
-      <div class="top-content_input">
-        <v-autocomplete
-          filled
-          return-object
-          :items="searchData"
-          rounded
-          @change="selectItem"
-          item-text="text"
-          item-value="text"
-        >
-          <template slot="item" slot-scope="data">
-            <div class="d-flex input_selection justify-space-between">
-              {{data.item.text}}
-              <v-chip :color="getColor(data.item.type)" class="input_selection-chip">{{data.item.type}}</v-chip>
-            </div>
-          </template>
-          <v-btn
-            class="search_button"
-            slot="append"
+  <header class="header">
+  <video class="header_video d-block" poster="@/assets/media/header-bg.jpg" autoplay muted loop playsinline>
+    <source src="@/assets/media/videos/header-xl.webm" type="video/webm">
+    <source src="@/assets/media/videos/header-xl.mp4" type="video/mp4">
+  </video>
+    <div class="d-none d-md-block d-lg-block d-xl-block header-bar">
+      <a href="https://data.undp.org/" target="_blank">
+        <img
+          class="header-bar_logo"
+          src="@/assets/media/logo.png"
+          alt="UNDP Data Futures Platform Logo">
+      </a>
+    </div>
+    <main role="main" class="header-text">
+        <h1 class="header-text_header header-text_header-big">Data Platform</h1>
+        <h2 class="header-text_header header-text_header-small">for the</h2>
+        <h1 class="header-text_header header-text_header-big">SMALL ISLAND DEVELOPING STATES</h1>
+        <hr class="d-none d-md-block d-lg-block d-xl-block header-text_divider">
+        <p class="d-none d-md-block d-lg-block d-xl-block header-text_description">UNDP’s integrated approach supports Small Island Developing States to accelerate transformative development based on three pillars: Climate Action, Blue Economy, and Digital Transformation.</p>
+        <div class="top-content_input" id="search">
+          <v-autocomplete
+            filled
+            :attach="'#search'"
+            return-object
+            :items="searchData"
             rounded
-            large
-            depressed
-            color="#0969FA"
+            @change="selectItem"
+            item-text="text"
+            item-value="text"
           >
-            search
-          </v-btn>
-        </v-autocomplete>
-      </div>
-    </div>
-    <div class="mt-auto">
-    </div>
-  </div>
+            <template slot="item" slot-scope="data">
+              <div class="d-flex input_selection justify-space-between">
+                {{data.item.text}}
+                <v-chip :color="getColor(data.item.type)" class="input_selection-chip">{{data.item.type}}</v-chip>
+              </div>
+            </template>
+            <v-btn
+              class="search_button"
+              slot="append"
+              rounded
+              large
+              depressed
+              color="#0969FA"
+            >
+              search
+            </v-btn>
+          </v-autocomplete>
+        </div>
+    </main>
+    <img
+      class="d-block d-md-none header-bar_logo-mobile"
+      src="@/assets/media/logo.png"
+      alt="Rising Up For Small Islands Developing States Logo"/>
+  </header>
 </template>
+
 <script>
   import axios from 'axios';
   export default {
@@ -73,116 +85,142 @@
         }
         window.open(link);
       }
-    }
   }
+}
 </script>
-<style>
-  .top-block_bg {
-    background-image: url("~@/assets/media/header-bg.jpg");
-    background-size: cover;
-    position:relative;
-    display: flex;
-    flex-direction: column;
-  }
-  .top-block_bg::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 0
-  }
-  .top-block_logo {
-    display: inline-block;
-    margin-top: 25px;
-    margin-left: 25px;
-    position:relative;
-    z-index: 1;
-  }
-  .logo_image{
-    max-height: 105px;
-  }
-  .top-content_header {
-    color: #fff;
-    font-size: 60px;
-    font-weight: black;
-    line-height: 65px;
-    margin-bottom: 36px;
-  }
-  .top-block_content {
-    position:relative;
-    z-index: 1;
-    margin: auto;
-  }
-  .top-content-chips {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 36px;
-  }
-  .top-content-chips_chip {
-    margin-left: .5em;
-    margin-right: .5em;
-    position: relative;
-  }
-  .top-content-chips_chip::after {
-    content: '';
-    display: inline-block;
-    width: .25em;
-    height: .25em;
-    background: #fff;
-    border-radius: 50%;
-    position: absolute;
-    left: 100%;
-    bottom: 0;
-    transform: translate(.375em,-.5em);
-  }
-  .top-content-chips_chip-last::after {
-    display: none;
-  }
-  .top-content_input {
-    max-width: 650px;
-    margin: auto;
-  }
-  .top-content_input .v-input__slot {
-    background: #E7F1FF !important;
-  }
-  .top-content_input .v-input__append-inner {
-    margin: auto;
-    margin-right: -17px;
-  }
-  .search_button {
-    color: #fff !important;
-    padding: 0 40px !important;
-  }
-  .input_selection {
-    width: 100%;
-  }
-  .input_selection-chip {
-    flex: 0 0 auto;
-    margin-left: auto;
-    color: #fff !important;
-  }
 
-  @media (max-width:600px) {
-    .top-block_content {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-    .top-content_header {
-      color: #fff;
-      font-size: 26px;
-      line-height: 32px;
-      margin-bottom: 26px;
-    }
-    .top-content-chips {
-      font-size: 16px;
-      line-height: 20px;
-      margin-bottom: 20px;
-    }
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style>
+
+.top-content_input {
+  max-width: 650px;
+  margin: auto;
+  position: relative;
+}
+.top-content_input .v-input__slot {
+  background: #E7F1FF !important;
+}
+.top-content_input .v-input__append-inner {
+  margin: auto;
+  margin-right: -17px;
+}
+.search_button {
+  color: #fff !important;
+  padding: 0 40px !important;
+}
+.input_selection {
+  width: 100%;
+}
+.input_selection-chip {
+  flex: 0 0 auto;
+  margin-left: auto;
+  color: #fff !important;
+}
+.header {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+.header-bar {
+  width: 100%;
+  padding: 15px 10px;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.header-bar_logo {
+  width: 190px;
+}
+.header_video {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.header-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  filter: drop-shadow(1px 1px 0px black);
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.header-text_header {
+  font-weight: 650;
+  margin-top: -6px;
+}
+.header-text_header-big {
+  font-size: 58px;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+.header-text_header-small {
+  font-size: 36px;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s;
+}
+
+.header-text_divider {
+  width:70%;
+  margin: auto;
+  border-style:solid;
+  border-width:1px;
+  opacity:1;
+  margin-bottom:20px;
+}
+
+.header-text_description {
+  font-size: 20px;
+  font-weight: 400;
+  -webkit-animation: fadein 3s;
+  -moz-animation: fadein 3s;
+  -ms-animation: fadein 3s;
+  -o-animation: fadein 3s;
+  animation: fadein 3s;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header_button-down {
+  margin: auto;
+  position: relative;
+  z-index: 3;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+@media all and (max-width:600px) {
+  .header-text_header-big {
+    font-size: 36px;
+    margin-bottom: .6em;
   }
+  .header-text_header-small {
+    font-size: 24px;
+    margin-bottom: .6em;
+  }
+}
+@media all and (max-width:959px) {
+
+  .header {
+    min-height: calc(100vh - 100px);
+  }
+}
+.header-bar_logo-mobile {
+  position: relative;
+  z-index: 5;
+  width: 200px;
+  max-width: 70%;
+  margin: 0.5em auto auto;
+}
 </style>

@@ -2,12 +2,12 @@
   <v-container class="about-block">
     <v-row class="d-none d-md-flex mt-0" justify="center">
       <v-col cols="12">
-        <h2 class="about-block_header text-center">About the SIDS Data Platform</h2>
+        <h2 class="about-block_header text-center pt-5 pb-8">About the SIDS Data Platform</h2>
       </v-col>
     </v-row>
     <v-row>
       <v-col md="9" xs="12" sm="12">
-        <v-expansion-panels class="mb-4" flat accordion>
+        <v-expansion-panels v-model="panel" class="mb-4" flat accordion>
           <v-expansion-panel>
             <v-expansion-panel-header>What are Small Island Developing States?</v-expansion-panel-header>
             <v-expansion-panel-content>
@@ -101,24 +101,6 @@
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
-        <v-card flat>
-          <v-card-text>
-            <div class="d-flex align-center justify-space-between">
-              <p  class="mr-auto mb-0">
-                Follow our biweekly SIDS Bulletin
-              </p>
-              <v-btn
-                class="mr-0 ml-2"
-                color="primary"
-                rounded
-                depressed
-                target="_blank"
-                href="https://undp.us4.list-manage.com/subscribe?u=cf50bc7216b0c4b063618fbac&id=c2c8d779ea"
-                small
-              >Subscribe</v-btn>
-            </div>
-          </v-card-text>
-        </v-card>
       </v-col>
 
       <v-col class="d-none d-md-block" md="3">
@@ -136,6 +118,7 @@ export default {
   name: 'Portfolio',
   data() {
     return {
+      panel:0,
       resources: [{
         "name": "Rising Up for SIDS Offer",
         "description": "UNDP’s integrated SIDS offer articulates a clear strategy to respond to their most pressing needs as well as bring forth innovative solutions to the complex developmental challenges they face for a better future for people and planet.",

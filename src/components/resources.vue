@@ -3,28 +3,30 @@
     <v-container class="resources-container d-flex flex-column">
       <v-row dense class="mt-auto">
         <v-col>
-          <h2 class="resources-header text-center">Resources</h2>
+          <h2 class="resources-header text-center pt-5 pb-8">Resources</h2>
         </v-col>
       </v-row>
-      <div class="d-block d-sm-block">
+      <div class="d-block d-sm-none">
         <v-carousel height="90%" :hide-delimiters="true">
           <v-carousel-item
             key="1"
           >
-            <v-card flat>
+            <v-card class="resources-block d-flex flex-column" flat>
               <v-img
                 width="100%"
                 src="~@/assets/media/handbook.jpg"
               ></v-img>
-              <v-chip class="ml-10 mt-n6 resources-block_chip" color="#fff">Indicators</v-chip>
-              <v-card-title class="resources-block_title pl-10 pr-16 mt-n6 pt-0 pb-0">
+              <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">Indicators</v-chip>
+              <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
                 SIDS Data Handbook
               </v-card-title>
               <v-card-text class="pr-10 pl-10 resources-block_text">
                 Country profiles for Small Island Developing States with data across the pillars of the UNDP’s SIDS Offer, financial statistics, and vulnerability index.
               </v-card-text>
-              <v-card-actions class="pl-10 pb-6">
+              <v-card-actions class="pl-10 pb-6 mb-0">
                 <v-btn
+                  href="https://data.undp.org/sids/vulnerability"
+                  target="_blank"
                   class="resources-block_button pr-8 pl-8"
                   rounded
                   color="#0969FA"
@@ -39,20 +41,22 @@
           <v-carousel-item
             key="2"
           >
-            <v-card flat>
+            <v-card class="resources-block d-flex flex-column" flat>
               <v-img
                 width="100%"
                 src="~@/assets/media/catalog.jpg"
               ></v-img>
-              <v-chip class="ml-10 mt-n6 resources-block_chip" color="#fff">Maps</v-chip>
-              <v-card-title class="resources-block_title pl-10 pr-16 mt-n6 pt-0 pb-0">
+              <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">Maps</v-chip>
+              <v-card-title class="resources-block_title pl-10 pr-16 pt-0 pb-0">
                 SIDS GIS Catalogue
               </v-card-title>
               <v-card-text class="pr-10 pl-10 resources-block_text">
                 A database of over 4000 development indicators for SIDS, compiled from 22 sources and featured alongside visualization and analytic tools.
               </v-card-text>
-              <v-card-actions class="pl-10 pb-6">
+              <v-card-actions class="pl-10 pb-6 mb-0">
                 <v-btn
+                  href="https://data.undp.org/sids/vulnerability"
+                  target="_blank"
                   class="resources-block_button pr-8 pl-8"
                   rounded
                   color="#0969FA"
@@ -67,20 +71,22 @@
           <v-carousel-item
             key="3"
           >
-            <v-card flat>
+            <v-card class="resources-block d-flex flex-column" flat>
               <v-img
                 width="100%"
                 src="~@/assets/media/manual.jpg"
               ></v-img>
-              <v-chip class="ml-10 mt-n6 resources-block_chip" color="#fff">Manual</v-chip>
-              <v-card-title class="resources-block_title pl-10 pr-16 mt-n6 pt-0 pb-0">
+              <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">Manual</v-chip>
+              <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
                 Manual for the UNDP SIDS Data Platform
               </v-card-title>
               <v-card-text class="pr-10 pl-10 resources-block_text">
                 A customizable Multidimensional Vulnerability Index (MVI) for SIDS to analyze environmental, geographic, economic, and financial vulnerability.
               </v-card-text>
-              <v-card-actions class="pl-10 pb-6">
+              <v-card-actions class="pl-10 pb-6 mb-0">
                 <v-btn
+                  href="https://data.undp.org/sids/vulnerability"
+                  target="_blank"
                   class="resources-block_button pr-8 pl-8"
                   rounded
                   color="#0969FA"
@@ -96,19 +102,19 @@
       </div>
       <v-row class="d-none d-md-flex" dense>
         <v-col cols="4">
-          <v-card flat>
+          <v-card class="resources-block d-flex flex-column" flat>
             <v-img
               width="100%"
               src="~@/assets/media/handbook.jpg"
             ></v-img>
-            <v-chip class="ml-10 mt-n6 resources-block_chip" color="#fff">Indicators</v-chip>
-            <v-card-title class="resources-block_title pl-10 pr-16 mt-n6 pt-0 pb-0">
+            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">Indicators</v-chip>
+            <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
               SIDS Data Handbook
             </v-card-title>
             <v-card-text class="pr-10 pl-10 resources-block_text">
               Country profiles for Small Island Developing States with data across the pillars of the UNDP’s SIDS Offer, financial statistics, and vulnerability index.
             </v-card-text>
-            <v-card-actions class="pl-10 pb-6">
+            <v-card-actions class="pl-10 pb-6 mb-0">
               <v-btn
                 class="resources-block_button pr-8 pl-8"
                 rounded
@@ -122,19 +128,19 @@
           </v-card>
         </v-col>
         <v-col cols="4">
-          <v-card flat>
+          <v-card class="resources-block d-flex flex-column" flat>
             <v-img
               width="100%"
               src="~@/assets/media/catalog.jpg"
             ></v-img>
-            <v-chip class="ml-10 mt-n6 resources-block_chip" color="#fff">Maps</v-chip>
-            <v-card-title class="resources-block_title pl-10 pr-16 mt-n6 pt-0 pb-0">
+            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">Maps</v-chip>
+            <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
               SIDS GIS Catalogue
             </v-card-title>
             <v-card-text class="pr-10 pl-10 resources-block_text">
               A database of over 4000 development indicators for SIDS, compiled from 22 sources and featured alongside visualization and analytic tools.
             </v-card-text>
-            <v-card-actions class="pl-10 pb-6">
+            <v-card-actions class="pl-10 pb-6 mb-0">
               <v-btn
                 class="resources-block_button pr-8 pl-8"
                 rounded
@@ -148,19 +154,19 @@
           </v-card>
         </v-col>
         <v-col cols="4">
-          <v-card flat>
+          <v-card class="resources-block d-flex flex-column" flat>
             <v-img
               width="100%"
               src="~@/assets/media/manual.jpg"
             ></v-img>
-            <v-chip class="ml-10 mt-n6 resources-block_chip" color="#fff">Manual</v-chip>
-            <v-card-title class="resources-block_title pl-10 pr-16 mt-n6 pt-0 pb-0">
+            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">Manual</v-chip>
+            <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
               Manual for the UNDP SIDS Data Platform
             </v-card-title>
             <v-card-text class="pr-10 pl-10 resources-block_text">
               A customizable Multidimensional Vulnerability Index (MVI) for SIDS to analyze environmental, geographic, economic, and financial vulnerability.
             </v-card-text>
-            <v-card-actions class="pl-10 pb-6">
+            <v-card-actions class="pl-10 pb-6 mb-0">
               <v-btn
                 class="resources-block_button pr-8 pl-8"
                 rounded
@@ -197,6 +203,7 @@
   font-weight: 600;
   line-height: 26px;
   min-height: 105px;
+  margin-top: -20px;
   word-break: keep-all;
 }
 .resources-text {
@@ -213,12 +220,16 @@
 }
 .resources-block_chip {
     border: 2px solid #efefef !important;
+    position: relative;
+    transform: translate(0, -50%);
 }
 
 .resources-block_button {
   color: #fff !important;
 }
-
+.resources-block {
+  height: 100%
+}
 .resources-bg {
   background-image: url("~@/assets/media/resources-bg.jpg");
   background-size: cover;
