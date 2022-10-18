@@ -2,5 +2,16 @@ module.exports = {
   transpileDependencies: [
     'vuetify'
   ],
-  // publicPath: '/home-page/',
+    publicPath: getPublicPath(),
 }
+
+
+function getPublicPath() {
+  switch (process.env.NODE_ENV) {
+    case 'production':
+        return '/sids/'
+    case 'staging':
+      return '/home-page/'
+    default:
+      return '/'
+  }
