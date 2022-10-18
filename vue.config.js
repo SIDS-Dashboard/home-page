@@ -7,6 +7,7 @@ module.exports = {
 
 
 function getPublicPath() {
+  console.log(process.env.NODE_ENV)
   switch (process.env.NODE_ENV) {
     case 'production':
         return '/sids/'
