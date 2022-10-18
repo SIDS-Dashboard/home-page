@@ -2,7 +2,7 @@ module.exports = {
   transpileDependencies: [
     'vuetify'
   ],
-    publicPath: getPublicPath(),
+  publicPath: getPublicPath(),
 }
 
 
@@ -15,3 +15,4 @@ function getPublicPath() {
     default:
       return '/'
   }
+}
