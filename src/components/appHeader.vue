@@ -17,8 +17,8 @@
         <h2 class="header-text_header header-text_header-small">for the</h2>
         <h1 class="header-text_header header-text_header-big">SMALL ISLAND DEVELOPING STATES</h1>
         <hr class="d-none d-md-block d-lg-block d-xl-block header-text_divider">
-        <p class="d-none d-md-block d-lg-block d-xl-block header-text_description">UNDP’s integrated approach supports Small Island Developing States to accelerate transformative development based on three pillars: Climate Action, Blue Economy, and Digital Transformation.</p>
-        <div class="top-content_input" id="search">
+        <p class="d-none d-md-block d-lg-block d-xl-block header-text_description mb-10">UNDP’s integrated approach supports Small Island Developing States to accelerate transformative development based on three pillars: Climate Action, Blue Economy, and Digital Transformation.</p>
+        <div class="top-content_input mr-4 ml-4" id="search">
           <v-autocomplete
             filled
             :attach="'#search'"
@@ -126,7 +126,7 @@
 .header-bar {
   width: 100%;
   padding: 15px 10px;
-  position: relative;
+  position: absolute;
   margin-top: 0;
   margin-bottom: 0;
 }

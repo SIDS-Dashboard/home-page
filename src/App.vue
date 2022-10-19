@@ -5,8 +5,8 @@
       <interfaces/>
       <video-block/>
       <resources/>
-      <subscribe/>
       <about/>
+      <subscribe/>
       <root-footer/>
     </v-main>
   </v-app>

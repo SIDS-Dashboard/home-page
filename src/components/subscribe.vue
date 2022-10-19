@@ -5,7 +5,7 @@
         <v-card flat>
           <v-card-text>
             <div class="d-flex align-center justify-center">
-              <h2  class="about-block_header ml-auto mb-0">
+              <h2  class="subscribe-block_header ml-auto mb-0">
                 Follow our biweekly SIDS Bulletin
               </h2>
               <v-btn
@@ -34,5 +34,15 @@ export default {
 <style scoped>
 .bg-white {
   background: #fff !important;
+}
+.subscribe-block_header{
+  font-size: 32px;
+  font-weight: 700;
+  color: #0969FA !important;
+}
+@media (max-width:959px) {
+  .subscribe-block_header {
+    font-size: 24px;
+  }
 }
 </style>

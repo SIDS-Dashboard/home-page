@@ -6,11 +6,6 @@
           <h2 class="interfaces-header text-center pt-5 pb-8">Interfaces for discovery and analysis of SIDS data</h2>
         </v-col>
       </v-row>
-      <v-row dense>
-        <v-col class="d-none d-md-block text-center">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </v-col>
-      </v-row>
       <div class="d-block d-sm-none">
         <v-carousel height="90%" :hide-delimiters="true">
           <v-carousel-item

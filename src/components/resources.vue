@@ -180,11 +180,6 @@
           </v-card>
         </v-col>
       </v-row>
-      <v-row class="mb-auto" dense>
-        <v-col cols="10" offset="1" class="text-center">
-          <p class="resources-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </v-col>
-      </v-row>
     </v-container>
   </div>
 </template>
