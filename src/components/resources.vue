@@ -1,12 +1,12 @@
 <template>
   <div class="full-block resources-bg">
-    <v-container class="resources-container d-flex flex-column">
-      <v-row dense class="mt-auto">
+    <v-container class="resources-container">
+      <v-row class="mt-auto">
         <v-col>
           <h2 class="resources-header text-center pt-5 pb-8">Resources</h2>
         </v-col>
       </v-row>
-      <div class="d-block d-sm-none">
+      <div class="d-block d-md-none">
         <v-carousel height="90%" :hide-delimiters="true">
           <v-carousel-item
             key="1"
@@ -100,7 +100,7 @@
           </v-carousel-item>
         </v-carousel>
       </div>
-      <v-row class="d-none d-md-flex" dense>
+      <v-row class="d-none d-md-flex mb-auto">
         <v-col cols="4">
           <v-card class="resources-block d-flex flex-column" flat>
             <v-img
@@ -230,6 +230,11 @@
   background-size: cover;
 }
 .resources-container {
-  min-height: 100vh
+  min-height: 100vh;
 }
+@media (min-height:800px) {
+    .resources-block {
+      margin-top: 5vh
+    }
+  }
 </style>

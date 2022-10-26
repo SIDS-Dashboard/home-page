@@ -6,7 +6,6 @@
       <video-block/>
       <resources/>
       <about/>
-      <subscribe/>
       <root-footer/>
     </v-main>
   </v-app>
@@ -19,13 +18,11 @@ import videoBlock from './components/video';
 import resources from './components/resources';
 import About from './components/About/About.vue';
 import rootFooter from './components/footer.vue';
-import subscribe from './components/subscribe.vue';
 
 export default {
   name: 'App',
 
   components: {
-    subscribe,
     rootHeader,
     interfaces,
     videoBlock,

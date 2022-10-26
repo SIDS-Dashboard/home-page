@@ -101,6 +101,7 @@
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
+        <subscribe/>
       </v-col>
 
       <v-col class="d-none d-md-block" md="3">
@@ -113,6 +114,8 @@
 </template>
 <script>
 import Resource from './children/Resource';
+import subscribe from './children/subscribe.vue';
+
 
 export default {
   name: 'Portfolio',
@@ -149,7 +152,8 @@ export default {
     }
   },
   components:{
-    Resource
+    Resource,
+    subscribe
   },
   computed: {
   }

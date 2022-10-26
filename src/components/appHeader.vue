@@ -21,6 +21,9 @@
         <div class="top-content_input mr-auto ml-auto pr-4 pl-4" id="search">
           <v-autocomplete
             filled
+            :menu-props="{
+              'nudge-right':16
+            }"
             :attach="'#search'"
             return-object
             :items="searchData"
@@ -125,7 +128,7 @@
 }
 .header-bar {
   width: 100%;
-  padding: 15px 10px;
+  padding: 30px 30px;
   position: absolute;
   margin-top: 0;
   margin-bottom: 0;

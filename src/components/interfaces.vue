@@ -6,7 +6,7 @@
           <h2 class="interfaces-header text-center pt-5 pb-8">Interfaces for discovery and analysis of SIDS data</h2>
         </v-col>
       </v-row>
-      <div class="d-block d-sm-none">
+      <div class="d-block d-md-none">
         <v-carousel height="90%" :hide-delimiters="true">
           <v-carousel-item
             key="1"
@@ -14,7 +14,9 @@
             <div class="phone-block">
               <v-card class="phone-block_card" flat>
                 <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-                  Country Profiles
+                  <a class="title_link" href="https://data.undp.org/sids/profiles">
+                    Country Profiles
+                  </a>
                 </v-card-title>
                   <v-img
                     class="phone-image"
@@ -33,7 +35,9 @@
             <div class="phone-block">
               <v-card class="phone-block_card" flat>
                 <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-                  Development Indicators
+                  <a class="title_link" href="https://data.undp.org/sids/development-indicators">
+                    Development Indicators
+                  </a>
                 </v-card-title>
                 <v-img
                   class="phone-image"
@@ -52,7 +56,9 @@
             <div class="phone-block">
               <v-card class="phone-block_card" flat>
                 <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-                  Multidimensional Vulnerability Index
+                  <a class="title_link" href="https://data.undp.org/sids/vulnerability">
+                    Multidimensional Vulnerability Index
+                  </a>
                 </v-card-title>
                 <v-img
                   class="phone-image"
@@ -71,7 +77,9 @@
             <div class="phone-block">
               <v-card class="phone-block_card" flat>
                 <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-                  Geospatial Data
+                  <a class="title_link" href="https://data.undp.org/sids/geospatial-data">
+                    Geospatial Data
+                  </a>
                 </v-card-title>
                 <v-img
                   class="phone-image"
@@ -90,7 +98,9 @@
             <div class="phone-block">
               <v-card class="phone-block_card" flat>
                 <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-0">
-                  UNDP Portfolio
+                  <a class="title_link" href="https://data.undp.org/sids/portfolio">
+                    UNDP Portfolio
+                  </a>
                 </v-card-title>
                 <v-img
                   class="phone-image"
@@ -109,7 +119,9 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-              Country Profiles
+              <a class="title_link" href="https://data.undp.org/sids/profiles">
+                Country Profiles
+              </a>
             </v-card-title>
             <a href="https://data.undp.org/sids/profiles">
               <v-img
@@ -126,7 +138,9 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-              Development Indicators
+              <a class="title_link" href="https://data.undp.org/sids/development-indicators">
+                Development Indicators
+              </a>
             </v-card-title>
             <a href="https://data.undp.org/sids/development-indicators">
               <v-img
@@ -143,7 +157,9 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-              Multidimensional Vulnerability Index
+              <a class="title_link" href="https://data.undp.org/sids/vulnerability">
+                Multidimensional Vulnerability Index
+              </a>
             </v-card-title>
             <a href="https://data.undp.org/sids/vulnerability">
               <v-img
@@ -160,7 +176,9 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-              Geospatial Data
+              <a class="title_link" href="https://data.undp.org/sids/geospatial-data">
+                Geospatial Data
+              </a>
             </v-card-title>
             <a href="https://data.undp.org/sids/geospatial-data">
               <v-img
@@ -177,7 +195,9 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-              UNDP Portfolio
+              <a class="title_link" href="https://data.undp.org/sids/portfolio">
+                UNDP Portfolio
+              </a>
             </v-card-title>
             <a href="https://data.undp.org/sids/portfolio">
               <v-img
@@ -237,6 +257,10 @@
   font-size: 32px;
   font-weight: 700;
   color: #0969FA;
+}
+.title_link {
+  text-decoration: none;
+  color: inherit !important;
 }
 
   @media (max-width:959px) {
