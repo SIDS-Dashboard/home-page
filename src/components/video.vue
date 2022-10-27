@@ -1,7 +1,7 @@
 <template>
   <div class="full-block full-video">
     <v-container>
-      <iframe class="video-frame" src="https://player.vimeo.com/video/76866320?h=defbcec356&color=b9eb23&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="video-frame" src="https://player.vimeo.com/video/687840475?h=1c4906dc1d" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </v-container>
   </div>
 </template>
