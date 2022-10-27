@@ -1,12 +1,22 @@
 <template>
   <div class="footer-root">
-    <p class="footer-root_text mr-auto ml-auto">Powered by the UNDP Data Futures Platform</p>
+    <div class="footer-spacer mr-auto ml-4">
+    </div>
+    <p class="footer-root_text mr-auto ml-auto">{{$t('poweredBy')}}</p>
+    <language-selector class="ml-auto mr-4"/>
   </div>
 </template>
 
 <script>
+import LanguageSelector from '@/components/LanguageSelector'
 export default {
   name: 'rootFooter',
+  props: {
+    msg: String
+  },
+  components: {
+    LanguageSelector
+  }
 }
 </script>
 

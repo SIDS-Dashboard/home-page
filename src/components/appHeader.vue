@@ -13,12 +13,12 @@
       </a>
     </div>
     <main role="main" class="header-text">
-        <h1 class="header-text_header header-text_header-big">Data Platform</h1>
-        <h2 class="header-text_header header-text_header-small">for the</h2>
-        <h1 class="header-text_header header-text_header-big">SMALL ISLAND DEVELOPING STATES</h1>
-        <hr class="d-none d-md-block d-lg-block d-xl-block header-text_divider">
-        <p class="d-none d-md-block d-lg-block d-xl-block header-text_description mb-10">UNDP’s integrated approach supports Small Island Developing States to accelerate transformative development based on three pillars: Climate Action, Blue Economy, and Digital Transformation.</p>
-        <div class="top-content_input mr-auto ml-auto pr-4 pl-4" id="search">
+      <h1 class="header-text_header header-text_header-big">{{ $t("header.header[0]") }}</h1>
+      <h2 class="header-text_header header-text_header-small">{{$t("header.header[1]")}}</h2>
+      <h1 class="header-text_header header-text_header-big">{{$t("header.header[2]")}} </h1>
+      <hr class="d-none d-md-block d-lg-block d-xl-block header-text_divider">
+      <p class="d-none d-md-block d-lg-block d-xl-block header-text_description">{{$t("header.description")}}</p>
+      <div class="top-content_input mr-auto ml-auto pr-4 pl-4" id="search">
           <v-autocomplete
             filled
             :menu-props="{
@@ -35,7 +35,8 @@
             <template slot="item" slot-scope="data">
               <div class="d-flex input_selection justify-space-between">
                 {{data.item.text}}
-                <v-chip :color="getColor(data.item.type)" class="input_selection-chip">{{data.item.type}}</v-chip>
+                <v-chip :color="getColor(data.item.type)" class="input_selection-chip">
+                  {{$t('header.'+data.item.type)}}</v-chip>
               </div>
             </template>
             <v-btn
@@ -46,7 +47,7 @@
               depressed
               color="#0969FA"
             >
-              search
+              {{$t('header.search')}}
             </v-btn>
           </v-autocomplete>
         </div>

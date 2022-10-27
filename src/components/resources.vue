@@ -3,7 +3,7 @@
     <v-container class="resources-container">
       <v-row class="mt-auto">
         <v-col>
-          <h2 class="resources-header text-center pt-5 pb-8">Resources</h2>
+          <h2 class="resources-header text-center pt-5 pb-8">{{$t('resources.header')}}</h2>
         </v-col>
       </v-row>
       <div class="d-block d-md-none">
@@ -107,12 +107,12 @@
               width="100%"
               src="~@/assets/media/handbook.jpg"
             ></v-img>
-            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">Indicators</v-chip>
+            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">{{$t('resources.handbook.badge')}}</v-chip>
             <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
-              SIDS Data Handbook
+              {{$t('resources.handbook.header')}}
             </v-card-title>
             <v-card-text class="pr-10 pl-10 resources-block_text">
-              Country profiles for Small Island Developing States with data across the pillars of the UNDP’s SIDS Offer, financial statistics, and vulnerability index.
+              {{$t('resources.handbook.description')}}
             </v-card-text>
             <v-card-actions class="pl-10 pb-6 mb-0">
               <v-btn
@@ -122,7 +122,7 @@
                 depressed
                 large
               >
-                Open
+                {{$t('resources.open')}}
               </v-btn>
             </v-card-actions>
           </v-card>
@@ -133,12 +133,12 @@
               width="100%"
               src="~@/assets/media/catalog.jpg"
             ></v-img>
-            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">Maps</v-chip>
+            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">{{$t('resources.catalog.badge')}}</v-chip>
             <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
-              SIDS GIS Catalogue
+              {{$t('resources.catalog.header')}}
             </v-card-title>
             <v-card-text class="pr-10 pl-10 resources-block_text">
-              A database of over 4000 development indicators for SIDS, compiled from 22 sources and featured alongside visualization and analytic tools.
+              {{$t('resources.catalog.description')}}
             </v-card-text>
             <v-card-actions class="pl-10 pb-6 mb-0">
               <v-btn
@@ -148,7 +148,7 @@
                 depressed
                 large
               >
-                Open
+                {{$t('resources.open')}}
               </v-btn>
             </v-card-actions>
           </v-card>
@@ -159,12 +159,12 @@
               width="100%"
               src="~@/assets/media/manual.jpg"
             ></v-img>
-            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">Manual</v-chip>
+            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">{{$t('resources.manual.badge')}}</v-chip>
             <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
-              Manual for the UNDP SIDS Data Platform
+              {{$t('resources.manual.header')}}
             </v-card-title>
             <v-card-text class="pr-10 pl-10 resources-block_text">
-              A customizable Multidimensional Vulnerability Index (MVI) for SIDS to analyze environmental, geographic, economic, and financial vulnerability.
+              {{$t('resources.manual.description')}}
             </v-card-text>
             <v-card-actions class="pl-10 pb-6 mb-0">
               <v-btn
@@ -174,7 +174,7 @@
                 depressed
                 large
               >
-                Open
+                {{$t('resources.open')}}
               </v-btn>
             </v-card-actions>
           </v-card>

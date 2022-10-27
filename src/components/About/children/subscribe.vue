@@ -6,7 +6,7 @@
           <v-card-text>
             <div class="d-flex align-center justify-center">
               <h2  class="subscribe-block_header ml-auto mb-0">
-                Follow our biweekly SIDS Bulletin
+                {{$t('about.fBulletin')}}
               </h2>
               <v-btn
                 class="mr-auto ml-8"
@@ -15,7 +15,7 @@
                 depressed
                 target="_blank"
                 href="https://undp.us4.list-manage.com/subscribe?u=cf50bc7216b0c4b063618fbac&id=c2c8d779ea"
-              >Subscribe</v-btn>
+              >{{$t('about.subscribe')}}</v-btn>
             </div>
           </v-card-text>
         </v-card>

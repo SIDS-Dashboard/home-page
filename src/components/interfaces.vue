@@ -3,7 +3,7 @@
     <v-container>
       <v-row dense>
         <v-col>
-          <h2 class="interfaces-header text-center pt-5 pb-8">Interfaces for discovery and analysis of SIDS data</h2>
+          <h2 class="interfaces-header text-center pt-5 pb-8">{{$t('interfaces.header')}}</h2>
         </v-col>
       </v-row>
       <div class="d-block d-md-none">
@@ -15,7 +15,7 @@
               <v-card class="phone-block_card" flat>
                 <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
                   <a class="title_link" href="https://data.undp.org/sids/profiles">
-                    Country Profiles
+                    {{$t('interfaces.profiles.header')}}
                   </a>
                 </v-card-title>
                   <v-img
@@ -24,7 +24,7 @@
                     src="~@/assets/media/profiles.jpg"
                   ></v-img>
                 <v-card-text class="text-center phone-block_text pr-0 pl-0">
-                  Country profiles for Small Island Developing States with data across the pillars of the UNDP’s SIDS Offer, financial statistics, and vulnerability index.
+                  {{$t('interfaces.profiles.description')}}
                 </v-card-text>
               </v-card>
             </div>
@@ -36,7 +36,7 @@
               <v-card class="phone-block_card" flat>
                 <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
                   <a class="title_link" href="https://data.undp.org/sids/development-indicators">
-                    Development Indicators
+                    {{$t('interfaces.indicators.header')}}
                   </a>
                 </v-card-title>
                 <v-img
@@ -45,7 +45,7 @@
                   src="~@/assets/media/indicators.jpg"
                 ></v-img>
                 <v-card-text class="text-center phone-block_text pr-0 pl-0">
-                  A database of over 4000 development indicators for SIDS, compiled from 22 sources and featured alongside visualization and analytic tools.
+                  {{$t('interfaces.indicators.description')}}
                 </v-card-text>
               </v-card>
             </div>
@@ -57,7 +57,7 @@
               <v-card class="phone-block_card" flat>
                 <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
                   <a class="title_link" href="https://data.undp.org/sids/vulnerability">
-                    Multidimensional Vulnerability Index
+                    {{$t('interfaces.mvi.header')}}
                   </a>
                 </v-card-title>
                 <v-img
@@ -66,7 +66,7 @@
                   src="~@/assets/media/mvi.jpg"
                 ></v-img>
                 <v-card-text class="text-center phone-block_text pr-0 pl-0">
-                  A customizable Multidimensional Vulnerability Index (MVI) for SIDS to analyze environmental, geographic, economic, and financial vulnerability.
+                  {{$t('interfaces.mvi.description')}}
                 </v-card-text>
               </v-card>
             </div>
@@ -78,7 +78,7 @@
               <v-card class="phone-block_card" flat>
                 <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
                   <a class="title_link" href="https://data.undp.org/sids/geospatial-data">
-                    Geospatial Data
+                    {{$t('interfaces.mvi.header')}}
                   </a>
                 </v-card-title>
                 <v-img
@@ -87,7 +87,7 @@
                   src="~@/assets/media/gis.jpg"
                 ></v-img>
                 <v-card-text class="text-center phone-block_text pr-0 pl-0">
-                  A SIDS GIS portal and database compiled from more than 80 datasets and research studies with coverage of Small Island Developing States.
+                  {{$t('interfaces.mvi.description')}}
                 </v-card-text>
               </v-card>
             </div>
@@ -99,7 +99,7 @@
               <v-card class="phone-block_card" flat>
                 <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-0">
                   <a class="title_link" href="https://data.undp.org/sids/portfolio">
-                    UNDP Portfolio
+                    {{$t('interfaces.portfolio.header')}}
                   </a>
                 </v-card-title>
                 <v-img
@@ -108,7 +108,7 @@
                   src="~@/assets/media/portfolio.jpg"
                 ></v-img>
                 <v-card-text class="text-center phone-block_text pr-0 pl-0">
-                  A digital tool for analyzing the UNDP SIDS Offer Portfolio across the SDGs, SAMOA Pathway priorities, and six UNDP Signature Solutions.
+                  {{$t('interfaces.portfolio.description')}}
                 </v-card-text>
               </v-card>
             </div>
@@ -119,8 +119,8 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-              <a class="title_link" href="https://data.undp.org/sids/profiles">
-                Country Profiles
+              <a class="title_link" href="https://data.undp.org/sids/portfolio">
+                {{$t('interfaces.portfolio.header')}}
               </a>
             </v-card-title>
             <a href="https://data.undp.org/sids/profiles">
@@ -130,16 +130,16 @@
                 src="~@/assets/media/profiles.jpg"
               ></v-img>
             </a>
-            <v-card-text class="text-center pr-0 pl-0">
-              Country profiles for Small Island Developing States with data across the pillars of the UNDP’s SIDS Offer, financial statistics, and vulnerability index.
+            <v-card-text class="text-center phone-block_text pr-0 pl-0">
+              {{$t('interfaces.profiles.description')}}
             </v-card-text>
           </v-card>
         </div>
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-              <a class="title_link" href="https://data.undp.org/sids/development-indicators">
-                Development Indicators
+              <a class="title_link" href="https://data.undp.org/sids/portfolio">
+                {{$t('interfaces.portfolio.header')}}
               </a>
             </v-card-title>
             <a href="https://data.undp.org/sids/development-indicators">
@@ -149,16 +149,16 @@
                 src="~@/assets/media/indicators.jpg"
               ></v-img>
             </a>
-            <v-card-text class="text-center pr-0 pl-0">
-              A database of over 4000 development indicators for SIDS, compiled from 22 sources and featured alongside visualization and analytic tools.
-            </v-card-text>
+              <v-card-text class="text-center phone-block_text pr-0 pl-0">
+                {{$t('interfaces.indicators.description')}}
+              </v-card-text>
           </v-card>
         </div>
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-              <a class="title_link" href="https://data.undp.org/sids/vulnerability">
-                Multidimensional Vulnerability Index
+              <a class="title_link" href="https://data.undp.org/sids/portfolio">
+                {{$t('interfaces.portfolio.header')}}
               </a>
             </v-card-title>
             <a href="https://data.undp.org/sids/vulnerability">
@@ -168,16 +168,16 @@
                 src="~@/assets/media/mvi.jpg"
               ></v-img>
             </a>
-            <v-card-text class="text-center pr-0 pl-0">
-              A customizable Multidimensional Vulnerability Index (MVI) for SIDS to analyze environmental, geographic, economic, and financial vulnerability.
-            </v-card-text>
+              <v-card-text class="text-center phone-block_text pr-0 pl-0">
+                {{$t('interfaces.mvi.description')}}
+              </v-card-text>
           </v-card>
         </div>
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-              <a class="title_link" href="https://data.undp.org/sids/geospatial-data">
-                Geospatial Data
+              <a class="title_link" href="https://data.undp.org/sids/portfolio">
+                {{$t('interfaces.portfolio.header')}}
               </a>
             </v-card-title>
             <a href="https://data.undp.org/sids/geospatial-data">
@@ -187,16 +187,16 @@
                 src="~@/assets/media/gis.jpg"
               ></v-img>
             </a>
-            <v-card-text class="text-center pr-0 pl-0">
-              A SIDS GIS portal and database compiled from more than 80 datasets and research studies with coverage of Small Island Developing States.
-            </v-card-text>
+              <v-card-text class="text-center phone-block_text pr-0 pl-0">
+                {{$t('interfaces.mvi.description')}}
+              </v-card-text>
           </v-card>
         </div>
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
               <a class="title_link" href="https://data.undp.org/sids/portfolio">
-                UNDP Portfolio
+                {{$t('interfaces.portfolio.header')}}
               </a>
             </v-card-title>
             <a href="https://data.undp.org/sids/portfolio">
@@ -206,9 +206,9 @@
                 src="~@/assets/media/portfolio.jpg"
               ></v-img>
             </a>
-            <v-card-text class="text-center pr-0 pl-0">
-              A digital tool for analyzing the UNDP SIDS Offer Portfolio across the SDGs, SAMOA Pathway priorities, and six UNDP Signature Solutions.
-            </v-card-text>
+              <v-card-text class="text-center phone-block_text pr-0 pl-0">
+                {{$t('interfaces.portfolio.description')}}
+              </v-card-text>
           </v-card>
         </div>
       </div>
