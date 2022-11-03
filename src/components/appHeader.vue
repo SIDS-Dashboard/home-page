@@ -13,12 +13,12 @@
       </a>
     </div>
     <main role="main" class="header-text">
-      <h1 class="header-text_header header-text_header-big">{{ $t("header.header[0]") }}</h1>
+      <h1 class="header-text_header header-text_header-big mt-15">{{ $t("header.header[0]") }}</h1>
       <h2 class="header-text_header header-text_header-small">{{$t("header.header[1]")}}</h2>
       <h1 class="header-text_header header-text_header-big">{{$t("header.header[2]")}} </h1>
       <hr class="d-none d-md-block d-lg-block d-xl-block header-text_divider">
       <p class="d-none d-md-block d-lg-block d-xl-block header-text_description">{{$t("header.description")}}</p>
-      <div class="top-content_input mr-auto ml-auto pr-4 pl-4" id="search">
+      <div class="top-content_input mt-15 mr-auto ml-auto pr-4 pl-4" id="search">
           <v-autocomplete
             filled
             :menu-props="{
@@ -33,7 +33,7 @@
             item-value="text"
           >
             <template slot="item" slot-scope="data">
-              <div class="d-flex input_selection justify-space-between">
+              <div class="d-flex input_selection justify-space-between text-left">
                 {{data.item.text}}
                 <v-chip :color="getColor(data.item.type)" class="input_selection-chip">
                   {{$t('header.'+data.item.type)}}</v-chip>
@@ -102,7 +102,7 @@
   position: relative;
 }
 .top-content_input .v-input__slot {
-  background: #E7F1FF !important;
+  background: rgba(255,255,255,0.7) !important;
 }
 .top-content_input .v-input__append-inner {
   margin: auto;

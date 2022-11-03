@@ -1,9 +1,9 @@
 <template>
   <div class="footer-root">
-    <div class="footer-spacer mr-auto ml-4">
+    <div class="d-block-sm d-none footer-spacer mr-auto ml-4">
     </div>
     <p class="footer-root_text mr-auto ml-auto">{{$t('poweredBy')}}</p>
-    <language-selector class="ml-auto mr-4"/>
+    <language-selector class="l-selector ml-4 ml-sm-auto mr-4"/>
   </div>
 </template>
 
@@ -37,5 +37,19 @@ export default {
 }
 .footer-spacer {
   min-width: 260px;
+}
+@media (max-width:639px) {
+  .footer-root_text {
+    padding: 24px;
+    text-align: center;
+  }
+
+  .footer-root {
+    display: block;
+  }
+  .l-selector {
+    float: right;
+    max-width: 260px;
+  }
 }
 </style>

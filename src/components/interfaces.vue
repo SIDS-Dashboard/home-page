@@ -3,127 +3,23 @@
     <v-container>
       <v-row dense>
         <v-col>
-          <h2 class="interfaces-header text-center pt-5 pb-8">{{$t('interfaces.header')}}</h2>
+          <h2 class="interfaces-header text-center pt-5 pb-5">{{$t('interfaces.header')}}</h2>
         </v-col>
       </v-row>
-      <div class="d-block d-md-none">
-        <v-carousel height="90%" :hide-delimiters="true">
-          <v-carousel-item
-            key="1"
-          >
-            <div class="phone-block">
-              <v-card class="phone-block_card" flat>
-                <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-                  <a class="title_link" href="https://data.undp.org/sids/profiles">
-                    {{$t('interfaces.profiles.header')}}
-                  </a>
-                </v-card-title>
-                  <v-img
-                    class="phone-image"
-                    width="100%"
-                    src="~@/assets/media/profiles.jpg"
-                  ></v-img>
-                <v-card-text class="text-center phone-block_text pr-0 pl-0">
-                  {{$t('interfaces.profiles.description')}}
-                </v-card-text>
-              </v-card>
-            </div>
-          </v-carousel-item>
-          <v-carousel-item
-            key="2"
-          >
-            <div class="phone-block">
-              <v-card class="phone-block_card" flat>
-                <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-                  <a class="title_link" href="https://data.undp.org/sids/development-indicators">
-                    {{$t('interfaces.indicators.header')}}
-                  </a>
-                </v-card-title>
-                <v-img
-                  class="phone-image"
-                  width="100%"
-                  src="~@/assets/media/indicators.jpg"
-                ></v-img>
-                <v-card-text class="text-center phone-block_text pr-0 pl-0">
-                  {{$t('interfaces.indicators.description')}}
-                </v-card-text>
-              </v-card>
-            </div>
-          </v-carousel-item>
-          <v-carousel-item
-            key="3"
-          >
-            <div class="phone-block">
-              <v-card class="phone-block_card" flat>
-                <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-                  <a class="title_link" href="https://data.undp.org/sids/vulnerability">
-                    {{$t('interfaces.mvi.header')}}
-                  </a>
-                </v-card-title>
-                <v-img
-                  class="phone-image"
-                  width="100%"
-                  src="~@/assets/media/mvi.jpg"
-                ></v-img>
-                <v-card-text class="text-center phone-block_text pr-0 pl-0">
-                  {{$t('interfaces.mvi.description')}}
-                </v-card-text>
-              </v-card>
-            </div>
-          </v-carousel-item>
-          <v-carousel-item
-            key="4"
-          >
-            <div class="phone-block">
-              <v-card class="phone-block_card" flat>
-                <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
-                  <a class="title_link" href="https://data.undp.org/sids/geospatial-data">
-                    {{$t('interfaces.mvi.header')}}
-                  </a>
-                </v-card-title>
-                <v-img
-                  class="phone-image"
-                  width="100%"
-                  src="~@/assets/media/gis.jpg"
-                ></v-img>
-                <v-card-text class="text-center phone-block_text pr-0 pl-0">
-                  {{$t('interfaces.mvi.description')}}
-                </v-card-text>
-              </v-card>
-            </div>
-          </v-carousel-item>
-          <v-carousel-item
-            key="5"
-          >
-            <div class="phone-block">
-              <v-card class="phone-block_card" flat>
-                <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-0">
-                  <a class="title_link" href="https://data.undp.org/sids/portfolio">
-                    {{$t('interfaces.portfolio.header')}}
-                  </a>
-                </v-card-title>
-                <v-img
-                  class="phone-image"
-                  width="100%"
-                  src="~@/assets/media/portfolio.jpg"
-                ></v-img>
-                <v-card-text class="text-center phone-block_text pr-0 pl-0">
-                  {{$t('interfaces.portfolio.description')}}
-                </v-card-text>
-              </v-card>
-            </div>
-          </v-carousel-item>
-        </v-carousel>
-      </div>
-      <div class="d-none d-md-flex">
+      <div class="d-flex flex-column flex-sm-row">
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
-            <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
+            <v-img
+              class="mr-auto ml-auto"
+              width="42"
+              src="~@/assets/media/profiles.png"
+            ></v-img>
+            <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-0 pb-sm-2">
               <a class="title_link" href="https://data.undp.org/sids/portfolio">
-                {{$t('interfaces.portfolio.header')}}
+                {{$t('interfaces.profiles.header')}}
               </a>
             </v-card-title>
-            <a href="https://data.undp.org/sids/profiles">
+            <a class="d-none d-sm-inline-block" href="https://data.undp.org/sids/profiles">
               <v-img
                 class="phone-image"
                 width="100%"
@@ -137,12 +33,17 @@
         </div>
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
-            <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
+            <v-img
+              class="mr-auto ml-auto"
+              width="42"
+              src="~@/assets/media/indicators.png"
+            ></v-img>
+            <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-0 pb-sm-2">
               <a class="title_link" href="https://data.undp.org/sids/portfolio">
-                {{$t('interfaces.portfolio.header')}}
+                {{$t('interfaces.indicators.header')}}
               </a>
             </v-card-title>
-            <a href="https://data.undp.org/sids/development-indicators">
+            <a class="d-none d-sm-inline-block" href="https://data.undp.org/sids/development-indicators">
               <v-img
                 class="phone-image"
                 width="100%"
@@ -156,12 +57,17 @@
         </div>
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
-            <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
+            <v-img
+              class="mr-auto ml-auto"
+              width="42"
+              src="~@/assets/media/MVI.png"
+            ></v-img>
+            <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-0 pb-sm-2">
               <a class="title_link" href="https://data.undp.org/sids/portfolio">
-                {{$t('interfaces.portfolio.header')}}
+                {{$t('interfaces.mvi.header')}}
               </a>
             </v-card-title>
-            <a href="https://data.undp.org/sids/vulnerability">
+            <a class="d-none d-sm-inline-block" href="https://data.undp.org/sids/vulnerability">
               <v-img
                 class="phone-image"
                 width="100%"
@@ -175,12 +81,17 @@
         </div>
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
-            <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
+            <v-img
+              class="mr-auto ml-auto"
+              width="42"
+              src="~@/assets/media/GIS.png"
+            ></v-img>
+            <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-0 pb-sm-2">
               <a class="title_link" href="https://data.undp.org/sids/portfolio">
-                {{$t('interfaces.portfolio.header')}}
+                {{$t('interfaces.gis.header')}}
               </a>
             </v-card-title>
-            <a href="https://data.undp.org/sids/geospatial-data">
+            <a class="d-none d-sm-inline-block" href="https://data.undp.org/sids/geospatial-data">
               <v-img
                 class="phone-image"
                 width="100%"
@@ -188,18 +99,23 @@
               ></v-img>
             </a>
               <v-card-text class="text-center phone-block_text pr-0 pl-0">
-                {{$t('interfaces.mvi.description')}}
+                {{$t('interfaces.gis.description')}}
               </v-card-text>
           </v-card>
         </div>
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
-            <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-2">
+            <v-img
+              class="mr-auto ml-auto"
+              width="42"
+              src="~@/assets/media/portfolio.png"
+            ></v-img>
+            <v-card-title class="phone-block_title justify-center pr-0 pl-0 pt-0 pb-0 pb-sm-2">
               <a class="title_link" href="https://data.undp.org/sids/portfolio">
                 {{$t('interfaces.portfolio.header')}}
               </a>
             </v-card-title>
-            <a href="https://data.undp.org/sids/portfolio">
+            <a class="d-none d-sm-inline-block" href="https://data.undp.org/sids/portfolio">
               <v-img
                 class="phone-image"
                 width="100%"
@@ -263,7 +179,7 @@
   color: inherit !important;
 }
 
-  @media (max-width:959px) {
+  @media (max-width:639px) {
     .interfaces-header {
       font-size: 20px;
       line-height: 24px;

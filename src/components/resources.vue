@@ -6,102 +6,8 @@
           <h2 class="resources-header text-center pt-5 pb-8">{{$t('resources.header')}}</h2>
         </v-col>
       </v-row>
-      <div class="d-block d-md-none">
-        <v-carousel height="90%" :hide-delimiters="true">
-          <v-carousel-item
-            key="1"
-          >
-            <v-card class="resources-block d-flex flex-column" flat>
-              <v-img
-                width="100%"
-                src="~@/assets/media/handbook.jpg"
-              ></v-img>
-              <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">Indicators</v-chip>
-              <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
-                SIDS Data Handbook
-              </v-card-title>
-              <v-card-text class="pr-10 pl-10 resources-block_text">
-                Country profiles for Small Island Developing States with data across the pillars of the UNDP’s SIDS Offer, financial statistics, and vulnerability index.
-              </v-card-text>
-              <v-card-actions class="pl-10 pb-6 mb-0">
-                <v-btn
-                  href="https://data.undp.org/sids/vulnerability"
-                  target="_blank"
-                  class="resources-block_button pr-8 pl-8"
-                  rounded
-                  color="#0969FA"
-                  depressed
-                  large
-                >
-                  Open
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-carousel-item>
-          <v-carousel-item
-            key="2"
-          >
-            <v-card class="resources-block d-flex flex-column" flat>
-              <v-img
-                width="100%"
-                src="~@/assets/media/catalog.jpg"
-              ></v-img>
-              <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">Maps</v-chip>
-              <v-card-title class="resources-block_title pl-10 pr-16 pt-0 pb-0">
-                SIDS GIS Catalogue
-              </v-card-title>
-              <v-card-text class="pr-10 pl-10 resources-block_text">
-                A database of over 4000 development indicators for SIDS, compiled from 22 sources and featured alongside visualization and analytic tools.
-              </v-card-text>
-              <v-card-actions class="pl-10 pb-6 mb-0">
-                <v-btn
-                  href="https://data.undp.org/sids/vulnerability"
-                  target="_blank"
-                  class="resources-block_button pr-8 pl-8"
-                  rounded
-                  color="#0969FA"
-                  depressed
-                  large
-                >
-                  Open
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-carousel-item>
-          <v-carousel-item
-            key="3"
-          >
-            <v-card class="resources-block d-flex flex-column" flat>
-              <v-img
-                width="100%"
-                src="~@/assets/media/manual.jpg"
-              ></v-img>
-              <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">Manual</v-chip>
-              <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
-                Manual for the UNDP SIDS Data Platform
-              </v-card-title>
-              <v-card-text class="pr-10 pl-10 resources-block_text">
-                A customizable Multidimensional Vulnerability Index (MVI) for SIDS to analyze environmental, geographic, economic, and financial vulnerability.
-              </v-card-text>
-              <v-card-actions class="pl-10 pb-6 mb-0">
-                <v-btn
-                  href="https://data.undp.org/sids/vulnerability"
-                  target="_blank"
-                  class="resources-block_button pr-8 pl-8"
-                  rounded
-                  color="#0969FA"
-                  depressed
-                  large
-                >
-                  Open
-                </v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-carousel-item>
-        </v-carousel>
-      </div>
-      <v-row class="d-none d-md-flex mb-auto">
-        <v-col cols="4">
+      <v-row class="mb-auto">
+        <v-col cols="12" sm="4">
           <v-card class="resources-block d-flex flex-column" flat>
             <v-img
               width="100%"
@@ -127,7 +33,7 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="12" sm="4">
           <v-card class="resources-block d-flex flex-column" flat>
             <v-img
               width="100%"
@@ -153,7 +59,7 @@
             </v-card-actions>
           </v-card>
         </v-col>
-        <v-col cols="4">
+        <v-col cols="12" sm="4">
           <v-card class="resources-block d-flex flex-column" flat>
             <v-img
               width="100%"
