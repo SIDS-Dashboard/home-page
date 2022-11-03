@@ -10,7 +10,7 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-img
-              class="mr-auto ml-auto"
+              class="d-sm-none mr-auto ml-auto"
               width="42"
               src="~@/assets/media/profiles.png"
             ></v-img>
@@ -19,7 +19,7 @@
                 {{$t('interfaces.profiles.header')}}
               </a>
             </v-card-title>
-            <a class="d-none d-sm-inline-block" href="https://data.undp.org/sids/profiles">
+            <a class="d-none d-sm-block" href="https://data.undp.org/sids/profiles">
               <v-img
                 class="phone-image"
                 width="100%"
@@ -34,7 +34,7 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-img
-              class="mr-auto ml-auto"
+              class="d-sm-none mr-auto ml-auto"
               width="42"
               src="~@/assets/media/indicators.png"
             ></v-img>
@@ -43,7 +43,7 @@
                 {{$t('interfaces.indicators.header')}}
               </a>
             </v-card-title>
-            <a class="d-none d-sm-inline-block" href="https://data.undp.org/sids/development-indicators">
+            <a class="d-none d-sm-block" href="https://data.undp.org/sids/development-indicators">
               <v-img
                 class="phone-image"
                 width="100%"
@@ -58,7 +58,7 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-img
-              class="mr-auto ml-auto"
+              class="d-sm-none mr-auto ml-auto"
               width="42"
               src="~@/assets/media/MVI.png"
             ></v-img>
@@ -67,7 +67,7 @@
                 {{$t('interfaces.mvi.header')}}
               </a>
             </v-card-title>
-            <a class="d-none d-sm-inline-block" href="https://data.undp.org/sids/vulnerability">
+            <a class="d-none d-sm-block" href="https://data.undp.org/sids/vulnerability">
               <v-img
                 class="phone-image"
                 width="100%"
@@ -82,7 +82,7 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-img
-              class="mr-auto ml-auto"
+              class="d-sm-none mr-auto ml-auto"
               width="42"
               src="~@/assets/media/GIS.png"
             ></v-img>
@@ -91,7 +91,7 @@
                 {{$t('interfaces.gis.header')}}
               </a>
             </v-card-title>
-            <a class="d-none d-sm-inline-block" href="https://data.undp.org/sids/geospatial-data">
+            <a class="d-none d-sm-block" href="https://data.undp.org/sids/geospatial-data">
               <v-img
                 class="phone-image"
                 width="100%"
@@ -106,7 +106,7 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-img
-              class="mr-auto ml-auto"
+              class="d-sm-none mr-auto ml-auto"
               width="42"
               src="~@/assets/media/portfolio.png"
             ></v-img>
@@ -115,7 +115,7 @@
                 {{$t('interfaces.portfolio.header')}}
               </a>
             </v-card-title>
-            <a class="d-none d-sm-inline-block" href="https://data.undp.org/sids/portfolio">
+            <a class="d-none d-sm-block" href="https://data.undp.org/sids/portfolio">
               <v-img
                 class="phone-image"
                 width="100%"
