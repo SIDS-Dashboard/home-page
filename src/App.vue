@@ -2,7 +2,7 @@
   <v-app>
     <v-main>
       <root-header/>
-      <interfaces/>
+      <interfaces id="content"/>
       <video-block/>
       <resources/>
       <about/>
@@ -42,5 +42,9 @@ export default {
 body, .v-application {
   font-family: "Proxima Nova", sans-serif !important;
   background-color: #f4f4f4 !important;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 </style>

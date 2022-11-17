@@ -51,6 +51,9 @@
             </v-btn>
           </v-autocomplete>
         </div>
+        <a class="header_button-down d-none d-md-block" href="#content">
+          <img alt="Arrow Down Icon" src="@/assets/media/arrow-down.png">
+        </a>
     </main>
     <img
       class="d-block d-md-none header-bar_logo-mobile"
