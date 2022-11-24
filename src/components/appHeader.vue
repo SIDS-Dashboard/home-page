@@ -12,8 +12,8 @@
           alt="UNDP Data Futures Platform Logo">
       </a>
     </div>
-    <main role="main" class="header-text">
-      <h1 class="header-text_header header-text_header-big mt-15">{{ $t("header.header[0]") }}</h1>
+    <main role="main" class="header-text pt-6">
+      <h1 class="header-text_header header-text_header-big mt-16">{{ $t("header.header[0]") }}</h1>
       <h2 class="header-text_header header-text_header-small">{{$t("header.header[1]")}}</h2>
       <h1 class="header-text_header header-text_header-big">{{$t("header.header[2]")}} </h1>
       <hr class="d-none d-md-block d-lg-block d-xl-block header-text_divider">
@@ -105,7 +105,7 @@
   position: relative;
 }
 .top-content_input .v-input__slot {
-  background: rgba(255,255,255,0.7) !important;
+  background: rgba(255,255,255,0.35) !important;
 }
 .top-content_input .v-input__append-inner {
   margin: auto;
@@ -128,7 +128,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 2em;
 }
 .header-bar {
   width: 100%;
