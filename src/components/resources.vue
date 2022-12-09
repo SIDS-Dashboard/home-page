@@ -27,6 +27,8 @@
                 color="#0969FA"
                 depressed
                 large
+                target="_blank"
+                href="https://github.com/UNDP-Data/SIDS-data-platform-API/raw/staging/resources/SDP%20Indicator%20Catalogue.pdf"
               >
                 {{$t('resources.open')}}
               </v-btn>
@@ -53,6 +55,8 @@
                 color="#0969FA"
                 depressed
                 large
+                target="_blank"
+                href="https://github.com/UNDP-Data/SIDS-data-platform-API/raw/staging/resources/SDP%20GIS%20Data%20Catalogue.pdf"
               >
                 {{$t('resources.open')}}
               </v-btn>
@@ -79,6 +83,9 @@
                 color="#0969FA"
                 depressed
                 large
+                target="_blank"
+                href="https://github.com/UNDP-Data/SIDS-data-platform-API/raw/staging/resources/SDP%20Written%20Manual.pdf"
+
               >
                 {{$t('resources.open')}}
               </v-btn>

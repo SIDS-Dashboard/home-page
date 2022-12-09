@@ -105,7 +105,11 @@
   position: relative;
 }
 .top-content_input .v-input__slot {
+  transition: background 200ms ;
   background: rgba(255,255,255,0.35) !important;
+}
+.top-content_input .v-select--is-menu-active .v-input__slot {
+  background: rgba(255,255,255, 1) !important;
 }
 .top-content_input .v-input__append-inner {
   margin: auto;
