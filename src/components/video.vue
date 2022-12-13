@@ -1,0 +1,37 @@
+<template>
+  <div class="full-block full-video">
+    <v-container>
+      <iframe class="video-frame"  src="https://www.youtube.com/embed/EW3ep5yhdlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </v-container>
+  </div>
+</template>
+<script>
+  export default {
+    name: 'interfaces',
+    data() {
+      return {
+      }
+    }
+  }
+</script>
+<style>
+.video-frame {
+  display: block;
+  min-width: 100%;
+  min-height: calc(100vh - 40px);
+}
+
+@media (max-width:960px) {
+  .full-video {
+    width: 100%;
+    min-height: auto !important;
+  }
+  .video-frame {
+    width: 100%;
+    min-height: 400px;
+  }
+  .player {
+    width: 100%;
+  }
+}
+</style>
