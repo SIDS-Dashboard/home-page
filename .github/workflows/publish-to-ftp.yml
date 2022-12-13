@@ -27,11 +27,11 @@ jobs:
           npm run build
       - name: Deploy 🚀
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
-        exclude: |
-          **/data/**
-          **/app/**
         with:
           server: data.undp.org
           username: sidsautoupdate@data.undp.org
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist/
+          exclude: |
+            **/data/**
+            **/app/**
