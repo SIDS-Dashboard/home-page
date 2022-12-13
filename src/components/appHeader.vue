@@ -64,6 +64,7 @@
 
 <script>
   import axios from 'axios';
+  import sidsList from '@/assets/sidsList';
   export default {
     name: 'rootHeader',
     data() {
@@ -83,14 +84,15 @@
         return 'blue'
       },
       selectItem(item) {
-        let link = 'https://data.undp.org/sids/';
+        let link = 'https://data.undp.org/sids/app/';
         if(item.type === 'indicator') {
-          link += 'indicators/' + item.id
+          link += 'development-indicators/' + item.id + '/'
         }
         if(item.type === 'profile') {
-          link += 'profiles/' + item.id
+          let id = sidsList.find(c => c.iso === item.id).id
+          link += 'country-profiles/' + id + '/'
         }
-        window.open(link);
+        window.location.href = link;
       }
   }
 }
