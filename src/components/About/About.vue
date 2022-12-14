@@ -134,7 +134,7 @@ export default {
                 "link": "https://spark.adobe.com/page/9myaX3gvA4gt5/"
             }
         ],
-        "image":"https://raw.githubusercontent.com/SIDS-Dashboard/api/main/data/cms/images/undpSidsOffer.jpeg"
+        "image":"https://data.undp.org/sids/data/data/cms/images/undpSidsOffer.jpeg"
     },
     {
         "type":"report",
@@ -144,7 +144,7 @@ export default {
                 "link": "https://express.adobe.com/page/3hg2U1XZZ6yh9/"
             }
         ],
-        "image":"https://raw.githubusercontent.com/SIDS-Dashboard/api/main/data/cms/images/progressReport.jpeg"
+        "image":"https://data.undp.org/sids/data/data/cms/images/progressReport.jpeg"
 
     }]
     }

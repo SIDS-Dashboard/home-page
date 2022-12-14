@@ -73,7 +73,7 @@
       }
     },
     async beforeCreate() {
-      let res = await axios.get('https://raw.githubusercontent.com/SIDS-Dashboard/api/staging/data/searchDict.json');
+      let res = await axios.get('https://data.undp.org/sids/data/data/searchDict.json');
       this.searchData = res.data;
     },
     methods: {
