@@ -1,7 +1,7 @@
 <template>
   <div class="full-block full-video">
     <v-container>
-      <iframe class="video-frame"  src="https://www.youtube.com/embed/EW3ep5yhdlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="video-frame" src="https://player.vimeo.com/video/780875955?h=b3383f98d1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
     </v-container>
   </div>
 </template>
