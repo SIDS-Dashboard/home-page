@@ -230,7 +230,6 @@
 }
 .header-bar_logo-mobile {
   position: relative;
-  z-index: 5;
   width: 200px;
   max-width: 70%;
   margin: 0.5em auto auto;
