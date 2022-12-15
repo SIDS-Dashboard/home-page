@@ -3,9 +3,9 @@ import VueI18n from 'vue-i18n';
 import axios from 'axios';
 
 Vue.use(VueI18n);
-
+console.log(process)
 async function loadLang(locale) {
-  let res = await axios.get(`https://data.undp.org/sids/data/data/cms/home/${locale}.json`)
+  let res = await axios.get(process.env.VUE_APP_API_PATH + `/data/cms/home/${locale}.json`)
   return res.data
 }
 

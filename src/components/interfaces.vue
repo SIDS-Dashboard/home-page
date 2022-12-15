@@ -167,6 +167,7 @@
   letter-spacing: 0em;
   text-align: center;
   min-height: 64px;
+  cursor: pointer;
   vertical-align: center
 }
 .interfaces-header{
