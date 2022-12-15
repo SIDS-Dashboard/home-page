@@ -73,7 +73,7 @@
       }
     },
     async beforeCreate() {
-      let res = await axios.get('https://data.undp.org/sids/data/data/searchDict.json');
+      let res = await axios.get(process.env.VUE_APP_API_PATH + '/data/searchDict.json');
       this.searchData = res.data;
     },
     methods: {
