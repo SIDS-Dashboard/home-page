@@ -84,7 +84,7 @@
                 depressed
                 large
                 target="_blank"
-                href="https://github.com/UNDP-Data/SIDS-data-platform-API/raw/production/api/resources/SDP%20GIS%20Data%20Catalogue.pdf"
+                href="https://github.com/UNDP-Data/SIDS-data-platform-API/raw/production/api/resources/SDP%20Written%20Manual.pdf"
 
               >
                 {{$t('resources.open')}}
