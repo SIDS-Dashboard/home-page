@@ -112,7 +112,9 @@
     </v-row>
   </v-container>
 </template>
+
 <script>
+import axios from 'axios';
 import Resource from './children/Resource';
 import subscribe from './children/subscribe.vue';
 
@@ -122,31 +124,7 @@ export default {
   data() {
     return {
       panel:0,
-      resources: [{
-        "type":"offer",
-        "links": [
-            {
-                "name": " Full version",
-                "link": "https://spark.adobe.com/page/KdCp73pb85itN/"
-            },
-            {
-                "name": "Two-pager",
-                "link": "https://spark.adobe.com/page/9myaX3gvA4gt5/"
-            }
-        ],
-        "image": process.env.VUE_APP_API_PATH + "/data/cms/images/undpSidsOffer.jpeg"
-    },
-    {
-        "type":"report",
-        "links": [
-            {
-                "name": "Download",
-                "link": "https://express.adobe.com/page/3hg2U1XZZ6yh9/"
-            }
-        ],
-        "image": process.env.VUE_APP_API_PATH + "/data/cms/images/progressReport.jpeg"
-
-    }]
+      resources: []
     }
   },
   components:{
@@ -154,6 +132,10 @@ export default {
     subscribe
   },
   computed: {
+  },
+  async created() {
+   let resp = await axios.get(process.env.VUE_APP_API_PATH+'/data/cms/resources.json');
+   this.resources = resp.data.additionalResources;
   }
 }
 </script>
