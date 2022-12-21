@@ -7,18 +7,19 @@
         </v-col>
       </v-row>
       <v-row class="mb-auto">
-        <v-col cols="12" sm="4">
+        <v-col v-for ="resource in resources" cols="12" sm="4" :key="resource.id">
           <v-card class="resources-block d-flex flex-column" flat>
             <v-img
+              max-height="220"
               width="100%"
-              src="~@/assets/media/handbook.jpg"
+              :src="`${path}/resources/resource-images/${resource.id}.jpg`"
             ></v-img>
-            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">{{$t('resources.handbook.badge')}}</v-chip>
+            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">{{$t(`resources.${resource.id}.badge`)}}</v-chip>
             <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
-              {{$t('resources.handbook.header')}}
+              {{$t(`resources.${resource.id}.header`)}}
             </v-card-title>
-            <v-card-text class="pr-10 pl-10 resources-block_text">
-              {{$t('resources.handbook.description')}}
+            <v-card-text class="pr-10 pl-10 resources-block_text mb-auto">
+              {{$t(`resources.${resource.id}.description`)}}
             </v-card-text>
             <v-card-actions class="pl-10 pb-6 mb-0">
               <v-btn
@@ -28,64 +29,7 @@
                 depressed
                 large
                 target="_blank"
-                href="https://github.com/UNDP-Data/SIDS-data-platform-API/raw/production/api/resources/SDP%20Indicator%20Catalogue.pdf"
-              >
-                {{$t('resources.open')}}
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col cols="12" sm="4">
-          <v-card class="resources-block d-flex flex-column" flat>
-            <v-img
-              width="100%"
-              src="~@/assets/media/catalog.jpg"
-            ></v-img>
-            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">{{$t('resources.catalog.badge')}}</v-chip>
-            <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
-              {{$t('resources.catalog.header')}}
-            </v-card-title>
-            <v-card-text class="pr-10 pl-10 resources-block_text">
-              {{$t('resources.catalog.description')}}
-            </v-card-text>
-            <v-card-actions class="pl-10 pb-6 mb-0">
-              <v-btn
-                class="resources-block_button pr-8 pl-8"
-                rounded
-                color="#0969FA"
-                depressed
-                large
-                target="_blank"
-                href="https://github.com/UNDP-Data/SIDS-data-platform-API/raw/production/api/resources/SDP%20GIS%20Data%20Catalogue.pdf"
-              >
-                {{$t('resources.open')}}
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col cols="12" sm="4">
-          <v-card class="resources-block d-flex flex-column" flat>
-            <v-img
-              width="100%"
-              src="~@/assets/media/manual.jpg"
-            ></v-img>
-            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">{{$t('resources.manual.badge')}}</v-chip>
-            <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
-              {{$t('resources.manual.header')}}
-            </v-card-title>
-            <v-card-text class="pr-10 pl-10 resources-block_text">
-              {{$t('resources.manual.description')}}
-            </v-card-text>
-            <v-card-actions class="pl-10 pb-6 mb-0">
-              <v-btn
-                class="resources-block_button pr-8 pl-8"
-                rounded
-                color="#0969FA"
-                depressed
-                large
-                target="_blank"
-                href="https://github.com/UNDP-Data/SIDS-data-platform-API/raw/production/api/resources/SDP%20Written%20Manual.pdf"
-
+                :href="`${path}/resources/${resource.link}`"
               >
                 {{$t('resources.open')}}
               </v-btn>
@@ -97,11 +41,18 @@
   </div>
 </template>
 <script>
+  import axios from 'axios';
   export default {
     name: 'interfaces',
     data() {
       return {
+        path: process.env.VUE_APP_API_PATH,
+        resources: []
       }
+    },
+    async created() {
+     let resp = await axios.get(process.env.VUE_APP_API_PATH+'/data/cms/resources.json');
+     this.resources = resp.data.featuredResources;
     }
   }
 </script>
