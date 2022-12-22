@@ -13,11 +13,11 @@
       </a>
     </div>
     <main role="main" class="header-text pt-6">
-      <h1 class="header-text_header header-text_header-big mt-16">{{ $t("header.header[0]") }}</h1>
-      <h2 class="header-text_header header-text_header-small">{{$t("header.header[1]")}}</h2>
-      <h1 class="header-text_header header-text_header-big">{{$t("header.header[2]")}} </h1>
+      <h1 class="header-text_header header-text_header-big mt-16">{{ $t("root.header.header[0]") }}</h1>
+      <h2 class="header-text_header header-text_header-small">{{$t("root.header.header[1]")}}</h2>
+      <h1 class="header-text_header header-text_header-big">{{$t("root.header.header[2]")}} </h1>
       <hr class="d-none d-md-block d-lg-block d-xl-block header-text_divider">
-      <p class="d-none d-md-block d-lg-block d-xl-block header-text_description">{{$t("header.description")}}</p>
+      <p class="d-none d-md-block d-lg-block d-xl-block header-text_description">{{$t("root.header.description")}}</p>
       <div class="top-content_input mt-15 mr-auto ml-auto pr-4 pl-4" id="search">
           <v-autocomplete
             filled
@@ -36,7 +36,7 @@
               <div class="d-flex input_selection justify-space-between text-left">
                 {{data.item.text}}
                 <v-chip :color="getColor(data.item.type)" class="input_selection-chip">
-                  {{$t('header.'+data.item.type)}}</v-chip>
+                  {{$t('root.header.'+data.item.type)}}</v-chip>
               </div>
             </template>
             <v-btn
@@ -47,7 +47,7 @@
               depressed
               color="#0969FA"
             >
-              {{$t('header.search')}}
+              {{$t('root.buttons.search')}}
             </v-btn>
           </v-autocomplete>
         </div>

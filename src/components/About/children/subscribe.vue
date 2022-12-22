@@ -15,7 +15,7 @@
                 depressed
                 target="_blank"
                 href="https://undp.us4.list-manage.com/subscribe?u=cf50bc7216b0c4b063618fbac&id=c2c8d779ea"
-              >{{$t('about.subscribe')}}</v-btn>
+              >{{$t('root.buttons.subscribe')}}</v-btn>
             </div>
           </v-card-text>
         </v-card>
