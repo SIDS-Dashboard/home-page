@@ -2,7 +2,7 @@
   <div class="footer-root">
     <div class="d-sm-block d-none footer-spacer mr-auto ml-4">
     </div>
-    <p class="footer-root_text mr-auto ml-auto">{{$t('poweredBy')}}</p>
+    <p class="footer-root_text mr-auto ml-auto">{{$t('root.footer.poweredBy')}}</p>
     <language-selector class="l-selector ml-4 ml-sm-auto mr-4"/>
   </div>
 </template>
