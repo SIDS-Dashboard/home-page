@@ -10,6 +10,7 @@
         <v-col v-for ="resource in resources" cols="12" sm="4" :key="resource.id">
           <v-card class="resources-block d-flex flex-column" flat>
             <v-img
+              eager
               max-height="220"
               width="100%"
               :src="`${path}/resources/resource-images/${resource.id}.jpg`"
