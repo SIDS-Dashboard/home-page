@@ -10,6 +10,7 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-img
+              eager
               class="d-sm-none mr-auto ml-auto"
               width="42"
               src="~@/assets/media/profiles.png"
@@ -21,6 +22,7 @@
             </v-card-title>
             <a class="d-none d-sm-block" href="https://data.undp.org/sids/app/profiles/">
               <v-img
+                eager
                 class="phone-image"
                 width="100%"
                 src="~@/assets/media/profiles.jpg"
@@ -34,6 +36,7 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-img
+              eager
               class="d-sm-none mr-auto ml-auto"
               width="42"
               src="~@/assets/media/indicators.png"
@@ -45,6 +48,7 @@
             </v-card-title>
             <a class="d-none d-sm-block" href="https://data.undp.org/sids/app/development-indicators/">
               <v-img
+                eager
                 class="phone-image"
                 width="100%"
                 src="~@/assets/media/indicators.jpg"
@@ -58,6 +62,7 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-img
+              eager
               class="d-sm-none mr-auto ml-auto"
               width="42"
               src="~@/assets/media/MVI.png"
@@ -69,6 +74,7 @@
             </v-card-title>
             <a class="d-none d-sm-block" href="https://data.undp.org/sids/app/vulnerability/">
               <v-img
+                eager
                 class="phone-image"
                 width="100%"
                 src="~@/assets/media/mvi.jpg"
@@ -82,6 +88,7 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-img
+              eager
               class="d-sm-none mr-auto ml-auto"
               width="42"
               src="~@/assets/media/GIS.png"
@@ -93,6 +100,7 @@
             </v-card-title>
             <a class="d-none d-sm-block" href="https://data.undp.org/sids/app/geospatial-data/">
               <v-img
+                eager
                 class="phone-image"
                 width="100%"
                 src="~@/assets/media/gis.jpg"
@@ -106,6 +114,7 @@
         <div class="phone-block">
           <v-card class="phone-block_card" flat>
             <v-img
+              eager
               class="d-sm-none mr-auto ml-auto"
               width="42"
               src="~@/assets/media/portfolio.png"
@@ -117,6 +126,7 @@
             </v-card-title>
             <a class="d-none d-sm-block" href="https://data.undp.org/sids/app/portfolio/">
               <v-img
+                eager
                 class="phone-image"
                 width="100%"
                 src="~@/assets/media/portfolio.jpg"
