@@ -6,7 +6,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col md="9" xs="12" sm="12">
+      <v-col md="8" xs="12" sm="12">
         <v-expansion-panels v-model="panel" class="mb-4" flat accordion>
           <v-expansion-panel>
             <v-expansion-panel-header>{{$t('about.whatSids')}}</v-expansion-panel-header>
@@ -104,7 +104,7 @@
         <subscribe/>
       </v-col>
 
-      <v-col class="d-none d-md-block" md="3">
+      <v-col class="d-none d-md-block" md="4">
         <template v-for="(resource, index) in resources">
           <resource :key="index" :resource="resource" />
         </template>
@@ -140,21 +140,35 @@ export default {
 }
 </script>
 <style>
-    .about-block_header{
-      font-weight: 600;
-      font-size: 35px;
-      line-height: 114.2%;
-    }
-    .text-field {
-      width: 100%
-    }
-    .about-block {
-      min-height: 100vh;
-    }
-    .about-block .v-expansion-panel-header {
-      font-weight: 600;
-    }
-   .about-block .v-expansion-panel::after {
-     border-top: 1px solid rgba(0, 0, 0, 0.12) !important;
-   }
+  .about-block_header{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 114.2%;
+  }
+  .text-field {
+    width: 100%
+  }
+  .about-block {
+    min-height: 100vh;
+  }
+  .about-block .v-expansion-panel-header {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 114.2%;
+    color: #000000;
+    padding: 20px 0 24px;
+  }
+  .about-block .v-expansion-panel-content {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 137.5%;
+    color: #000000;
+    padding: 25px 20px 20px 20px;
+  }
+  .about-block .v-expansion-panel-content a b {
+    font-weight: 400;
+  }
+  .about-block .v-expansion-panel::after {
+    border-top: 1px solid #A9B1B7 !important;
+  }
 </style>

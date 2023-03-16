@@ -121,3 +121,8 @@
   width: 13px;
   opacity: 0.3;
 }
+.v-application a {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  color: #000000 !important;
+}
