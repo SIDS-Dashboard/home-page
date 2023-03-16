@@ -9,24 +9,23 @@
       <v-row class="mb-auto">
         <v-col v-for ="resource in resources" cols="12" sm="4" :key="resource.id">
           <v-card class="resources-block d-flex flex-column" flat>
+            <v-card-text class="resources-block_chip pl-6 pr-6 pb-6" color="#fff">{{$t(`resources.${resource.id}.badge`)}}</v-card-text>
             <v-img
               eager
               max-height="220"
               width="100%"
               :src="`${path}/resources/resource-images/${resource.id}.jpg`"
             ></v-img>
-            <v-chip class="ml-10 mr-auto resources-block_chip" color="#fff">{{$t(`resources.${resource.id}.badge`)}}</v-chip>
-            <v-card-title class="resources-block_title pl-10 pr-16  pt-0 pb-0">
+            <v-card-title class="resources-block_title pl-6 pr-6 pt-4 pb-4">
               {{$t(`resources.${resource.id}.header`)}}
             </v-card-title>
-            <v-card-text class="pr-10 pl-10 resources-block_text mb-auto">
+            <v-card-text class="resources-block_text pl-6 pr-6">
               {{$t(`resources.${resource.id}.description`)}}
             </v-card-text>
-            <v-card-actions class="pl-10 pb-6 mb-0">
+            <v-card-actions class="pl-4">
               <v-btn
-                class="resources-block_button pr-8 pl-8"
-                rounded
-                color="#0969FA"
+                class="undp-button button-tertiary button-arrow"
+                color="#FFFFFF"
                 depressed
                 large
                 target="_blank"
@@ -59,11 +58,9 @@
 </script>
 <style>
 .resources-block_title {
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 26px;
-  min-height: 105px;
-  margin-top: -20px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 114.2%;
   word-break: keep-all;
 }
 .resources-text {
@@ -74,21 +71,27 @@
   text-align: center;
 }
 .resources-header{
-  font-size: 32px;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 114.2%;
   color: #fff;
 }
 .resources-block_chip {
-    border: 2px solid #efefef !important;
-    position: relative;
-    transform: translate(0, -50%);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 112.5%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #000 !important;
 }
-
-.resources-block_button {
-  color: #fff !important;
+.resources-block_text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 137.5%;
+  color:#000 !important;
 }
 .resources-block {
-  height: 100%
+  height: 100%;
 }
 .resources-bg {
   background-image: url("~@/assets/media/resources-bg.jpg");

@@ -1,5 +1,5 @@
 <template>
-  <div class="full-block">
+  <div>
     <v-container>
       <v-row dense>
         <v-col>
@@ -28,7 +28,7 @@
                 src="~@/assets/media/profiles.jpg"
               ></v-img>
             </a>
-            <v-card-text class="text-center phone-block_text pr-0 pl-0">
+            <v-card-text class="phone-block_text pr-0 pl-0">
               {{$t('interfaces.profiles.description')}}
             </v-card-text>
           </v-card>
@@ -54,7 +54,7 @@
                 src="~@/assets/media/indicators.jpg"
               ></v-img>
             </a>
-              <v-card-text class="text-center phone-block_text pr-0 pl-0">
+              <v-card-text class="phone-block_text pr-0 pl-0">
                 {{$t('interfaces.indicators.description')}}
               </v-card-text>
           </v-card>
@@ -80,7 +80,7 @@
                 src="~@/assets/media/mvi.jpg"
               ></v-img>
             </a>
-              <v-card-text class="text-center phone-block_text pr-0 pl-0">
+              <v-card-text class="phone-block_text pr-0 pl-0">
                 {{$t('interfaces.mvi.description')}}
               </v-card-text>
           </v-card>
@@ -106,7 +106,7 @@
                 src="~@/assets/media/gis.jpg"
               ></v-img>
             </a>
-              <v-card-text class="text-center phone-block_text pr-0 pl-0">
+              <v-card-text class="phone-block_text pr-0 pl-0">
                 {{$t('interfaces.gis.description')}}
               </v-card-text>
           </v-card>
@@ -132,7 +132,7 @@
                 src="~@/assets/media/portfolio.jpg"
               ></v-img>
             </a>
-              <v-card-text class="text-center phone-block_text pr-0 pl-0">
+              <v-card-text class="phone-block_text pr-0 pl-0">
                 {{$t('interfaces.portfolio.description')}}
               </v-card-text>
           </v-card>
@@ -154,7 +154,6 @@
 .phone-image {
   border-radius: 24px;
   overflow: hidden;
-  border: 3px solid #7f7f7f;
   transition:all 150ms ease-in;
   cursor: pointer;
 }
@@ -170,6 +169,7 @@
   background: transparent !important;
 }
 .phone-block_title {
+
   word-break: keep-all;
   font-size: 18px;
   font-weight: 700;
@@ -180,12 +180,26 @@
   cursor: pointer;
   vertical-align: center
 }
+.phone-block_text{
+  font-size: 16px;
+  line-height: 137.5%;
+  color: #000000 !important;
+}
 .interfaces-header{
-  font-size: 32px;
-  font-weight: 700;
-  color: #0969FA;
+  margin: 13px 0 30px;
+  font-style: normal;
+  font-weight: 600; 
+  font-size: 35px;
+  line-height: 114.2%;
+  color: #000000;
+
 }
 .title_link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 112.5%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   text-decoration: none;
   color: inherit !important;
 }
@@ -208,6 +222,9 @@
       width: 100%;
       padding: 10px;
       box-sizing: border-box;
+    }
+    .title_link {
+      font-size: 15px;
     }
   }
 </style>

@@ -41,7 +41,7 @@ export default {
 @import './assets/styles.css';
 body, .v-application {
   font-family: "Proxima Nova", sans-serif !important;
-  background-color: #f4f4f4 !important;
+  background-color: #ffffff !important;
 }
 
 html {

@@ -141,9 +141,9 @@ export default {
 </script>
 <style>
     .about-block_header{
-      font-size: 32px;
-      font-weight: 700;
-      color: #0969FA;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 114.2%;
     }
     .text-field {
       width: 100%
