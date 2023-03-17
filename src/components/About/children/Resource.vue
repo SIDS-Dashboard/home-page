@@ -50,6 +50,8 @@ export default {
   color: #000000;
 }
 .resource-image{
+  height: 405px;
+  width: 336px;
   padding: 35px 48px 36px;
 }
 .resource-bottom{

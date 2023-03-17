@@ -6,7 +6,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col md="8" xs="12" sm="12">
+      <v-col md="7" xs="12" sm="12" class="offset-lg-1">
         <v-expansion-panels v-model="panel" class="mb-4" flat accordion>
           <v-expansion-panel>
             <v-expansion-panel-header>{{$t('about.whatSids')}}</v-expansion-panel-header>
@@ -82,7 +82,7 @@
             </v-expansion-panel-content>
           </v-expansion-panel>
           <v-divider/>
-          <v-expansion-panel>
+          <v-expansion-panel class="last-panel">
             <v-expansion-panel-header>{{$t('about.whatContact')}}</v-expansion-panel-header>
             <v-expansion-panel-content>
               <p>
@@ -104,7 +104,7 @@
         <subscribe/>
       </v-col>
 
-      <v-col class="d-none d-md-block" md="4">
+      <v-col class="d-none d-md-block offset-lg-1" md="3">
         <template v-for="(resource, index) in resources">
           <resource :key="index" :resource="resource" />
         </template>
@@ -148,6 +148,9 @@ export default {
   .text-field {
     width: 100%
   }
+  .last-panel{
+    border-bottom: 1px solid #A9B1B7 !important;
+  }
   .about-block {
     min-height: 100vh;
   }
@@ -170,5 +173,13 @@ export default {
   }
   .about-block .v-expansion-panel::after {
     border-top: 1px solid #A9B1B7 !important;
+  }
+  .about-block a {
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    color: #000000 !important;
+  }
+  .v-expantion-panels {
+    margin-bottom: 45px;
   }
 </style>

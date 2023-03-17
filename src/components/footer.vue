@@ -1,8 +1,6 @@
 <template>
   <div class="footer-root">
-    <div class="d-sm-block d-none footer-spacer mr-auto ml-4">
-    </div>
-    <p class="footer-root_text mr-auto ml-auto">{{$t('root.footer.poweredBy')}}</p>
+    <p class="footer-root_text pt-3">{{$t('root.footer.poweredBy')}}</p>
     <language-selector class="l-selector ml-4 ml-sm-auto mr-4"/>
   </div>
 </template>
@@ -24,26 +22,23 @@ export default {
 <style scoped>
 .footer-root {
   width: 100%;
-  background: #e0e1e9;
-  height: 100px;
+  background: #232E3D;
+  height: 86px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  box-shadow: inset 0px 90px 28px -50px #5f5c8721;
 }
 .footer-root_text {
-  margin: 0;
-  color: #868686;
-}
-.footer-spacer {
-  min-width: 260px;
+  margin-left: 46px;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 14px;
 }
 @media (max-width:639px) {
   .footer-root_text {
     padding: 24px;
     text-align: center;
   }
-
   .footer-root {
     display: block;
   }

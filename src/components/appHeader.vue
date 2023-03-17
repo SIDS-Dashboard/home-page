@@ -16,18 +16,16 @@
       <h1 class="header-text_header header-text_header-big mt-16">{{ $t("root.header.header[0]") }}</h1>
       <h2 class="header-text_header header-text_header-small">{{$t("root.header.header[1]")}}</h2>
       <h1 class="header-text_header header-text_header-big">{{$t("root.header.header[2]")}} </h1>
-      <hr class="d-none d-md-block d-lg-block d-xl-block header-text_divider">
-      <p class="d-none d-md-block d-lg-block d-xl-block header-text_description">{{$t("root.header.description")}}</p>
-      <div class="top-content_input mt-15 mr-auto ml-auto pr-4 pl-4" id="search">
+      <p class="d-none d-md-block d-lg-block d-xl-block header-text_description mt-3 px-12">{{$t("root.header.description")}}</p>
+      <div class="top-content_input mt-10 mb-16" id="search">
           <v-autocomplete
-            filled
+            class=""
             :menu-props="{
               'nudge-right':16
             }"
             :attach="'#search'"
             return-object
             :items="searchData"
-            rounded
             @change="selectItem"
             item-text="text"
             item-value="text"
@@ -42,10 +40,8 @@
             <v-btn
               class="search_button"
               slot="append"
-              rounded
               large
               depressed
-              color="#0969FA"
             >
               {{$t('root.buttons.search')}}
             </v-btn>
@@ -107,19 +103,22 @@
   position: relative;
 }
 .top-content_input .v-input__slot {
-  transition: background 200ms ;
-  background: rgba(255,255,255,0.35) !important;
+  border: 3px solid var(--white);
 }
 .top-content_input .v-select--is-menu-active .v-input__slot {
   background: rgba(255,255,255, 1) !important;
 }
 .top-content_input .v-input__append-inner {
   margin: auto;
-  margin-right: -17px;
 }
 .search_button {
-  color: #fff !important;
-  padding: 0 40px !important;
+  background-color: #fff !important;
+  color: #006EB5 !important;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 25 !important;
+  border-radius: 0;
+  height: 100%;
 }
 .input_selection {
   width: 100%;
@@ -158,9 +157,14 @@
   z-index: 2;
   text-align: center;
   color: white;
-  filter: drop-shadow(1px 1px 0px black);
   margin-bottom: auto;
   margin-top: auto;
+}
+.header-text h1, .header-text h2{
+  text-transform: uppercase;
+}
+.header-text h2{
+  font-size: 16px;
 }
 .header-text_header {
   font-weight: 650;
@@ -184,18 +188,10 @@
   animation: fadein 3s;
 }
 
-.header-text_divider {
-  width:70%;
-  margin: auto;
-  border-style:solid;
-  border-width:1px;
-  opacity:1;
-  margin-bottom:20px;
-}
-
 .header-text_description {
-  font-size: 20px;
   font-weight: 400;
+  font-size: 25px;
+  line-height: 137.5%;
   -webkit-animation: fadein 3s;
   -moz-animation: fadein 3s;
   -ms-animation: fadein 3s;
