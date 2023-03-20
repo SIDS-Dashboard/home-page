@@ -114,7 +114,7 @@
 }
 
 .undp-button.button-tertiary {
-  background-color: transparent;
+  background-color: #FFF;
   padding-left: 0;
   padding-right: 0;
   color: var(--black);
@@ -122,6 +122,7 @@
 
 .undp-button.button-tertiary:hover {
   color: var(--red);
+  background-color: #FFF;
 }
 
 .undp-button.button-tertiary.button-arrow:after {

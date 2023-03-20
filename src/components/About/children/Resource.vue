@@ -6,21 +6,25 @@
       :src="resource.image"
       ></v-img>
     </div>
-    <v-text>
+    <div>
       <div class="resource-bottom">
         <div class="resource-title">{{$t('resources.'+resource.id+'.name')}}</div>
-        <v-btn
-          class="undp-button button-tertiary button-arrow"
-          color="#FFFFFF"
-          depressed
-          large
-          target="_blank"
-          :href="resource.links[0].link"
-        >
-        OPEN
-        </v-btn>
+        <v-card-actions class="pt-4 pl-0">
+          <v-hover v-slot="{ hover }">
+            <v-btn
+              variant="plain"
+              class="undp-button button-tertiary button-arrow pl-0"
+              depressed
+              target="_blank"
+              :style="{ 'background-color': hover ? '#F7F7F7' : '#F7F7F7', 'font-size':'16px' }"
+              :href="resource.links[0].link"
+            >
+            OPEN
+            </v-btn>
+          </v-hover>
+        </v-card-actions>
       </div>
-    </v-text>
+    </div>
   </div>
 </template>
 
@@ -55,7 +59,10 @@ export default {
   padding: 35px 48px 36px;
 }
 .resource-bottom{
-  padding: 24px;
+  padding: 24px 24px 10px 24px;
   background-color: #f7f7f7;
+}
+.resource-bottom a {
+  border-bottom:0;
 }
 </style>

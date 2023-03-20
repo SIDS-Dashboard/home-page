@@ -21,7 +21,7 @@
           <v-autocomplete
             class=""
             :menu-props="{
-              'nudge-right':16
+              'nudge-right':0
             }"
             :attach="'#search'"
             return-object
@@ -38,6 +38,7 @@
               </div>
             </template>
             <v-btn
+              variant="flat"
               class="search_button"
               slot="append"
               large

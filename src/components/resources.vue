@@ -23,16 +23,17 @@
               {{$t(`resources.${resource.id}.description`)}}
             </v-card-text>
             <v-card-actions class="pl-4">
-              <v-btn
-                class="undp-button button-tertiary button-arrow"
-                color="#FFFFFF"
-                depressed
-                large
-                target="_blank"
-                :href="`${path}/resources/${resource.link}`"
-              >
-                {{$t('resources.open')}}
-              </v-btn>
+              <v-hover v-slot="{ hover }">
+                <v-btn
+                  variant="plain"
+                  class="undp-button button-tertiary button-arrow"
+                  depressed
+                  :style="{ 'background-color': hover ? '#FFFFFF' : '#FFFFFF', 'font-size':'16px' }"
+                  :href="`${path}/resources/${resource.link}`"
+                >
+                  {{$t('resources.open')}}
+                </v-btn>
+              </v-hover>
             </v-card-actions>
           </v-card>
         </v-col>
@@ -91,7 +92,7 @@
   color:#000 !important;
 }
 .resources-block {
-  height: 100%;
+  padding-bottom: 20px;
 }
 .resources-bg {
   background-image: url("~@/assets/media/resources-bg.jpg");
