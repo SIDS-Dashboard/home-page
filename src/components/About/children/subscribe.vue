@@ -1,5 +1,5 @@
 <template>
-  <div class="subscribe-container py-6 mt-11">
+  <div class="subscribe-container py-6 px-5 mt-11">
     <v-row class="subscribe-block">
       <v-col>
         <div class="d-flex align-center justify-center py-4">
@@ -12,7 +12,6 @@
               depressed
               class="undp-button button-secondary button-arrow ml-6"
               target="_blank"
-
               :style="{ 'background-color': hover ? '#006EB5' : '#006EB5', 'font-size':'16px', 'padding': '24px' }"
               href="https://undp.us4.list-manage.com/subscribe?u=cf50bc7216b0c4b063618fbac&id=c2c8d779ea"
             >{{$t('root.buttons.subscribe')}}

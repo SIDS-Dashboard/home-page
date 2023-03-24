@@ -103,11 +103,24 @@
   margin: auto;
   position: relative;
 }
-.top-content_input .v-input__slot {
+/*.top-content_input .v-input__slot {
   border: 3px solid var(--white);
+  border-bottom : 2px solid var(--white);
 }
 .top-content_input .v-select--is-menu-active .v-input__slot {
   background: rgba(255,255,255, 1) !important;
+}
+*/
+.v-text-field > .v-input__control > .v-input__slot::after{
+  border: 0px !important;
+  box-shadow: none !important;
+}
+.v-text-field.v-select .v-input__slot {
+  border-radius: 0;
+  height: 48px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-size: 16px;
 }
 .top-content_input .v-input__append-inner {
   margin: auto;
@@ -231,4 +244,5 @@
   max-width: 70%;
   margin: 0.5em auto auto;
 }
+
 </style>
