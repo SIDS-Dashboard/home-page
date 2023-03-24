@@ -12,11 +12,11 @@
         <v-card-actions class="pt-4 pl-0">
           <v-hover v-slot="{ hover }">
             <v-btn
-              variant="plain"
-              class="undp-button button-tertiary button-arrow pl-0"
+              plain
+              class="red-arrow pl-0"
               depressed
               target="_blank"
-              :style="{ 'background-color': hover ? '#F7F7F7' : '#F7F7F7', 'font-size':'16px' }"
+              :style="{ 'background-color': hover ? '#FAFAFA' : '#FAFAFA', 'font-size':'16px' }"
               :href="resource.links[0].link"
             >
             OPEN

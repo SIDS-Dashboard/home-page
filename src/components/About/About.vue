@@ -179,7 +179,26 @@ export default {
     border-bottom: 1px solid #000;
     color: #000000 !important;
   }
-  .v-expantion-panels {
+  .v-expansion-panels {
     margin-bottom: 45px;
+  }
+  .v-icon.mdi-chevron-down.theme--light{
+    display: none;
+  }
+  .v-expansion-panel-header__icon:after {
+    transform: translateY(-50%);
+    transition: all 200ms ease-in-out;
+    background: url(https://design.undp.org/static/media/chevron-down.16c97a3f.svg) no-repeat center center;
+    content: "";
+    float: right;
+    height: 13px;
+    position: absolute;
+    pointer-events: none;
+    right: 5px;
+    top: 50%;
+    width: 20px;
+  }
+  .v-expansion-panel-header--active .v-expansion-panel-header__icon:after{
+    transform: rotate(180deg);
   }
 </style>

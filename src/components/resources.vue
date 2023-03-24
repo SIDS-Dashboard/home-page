@@ -26,7 +26,7 @@
               <v-hover v-slot="{ hover }">
                 <v-btn
                   variant="plain"
-                  class="undp-button button-tertiary button-arrow"
+                  class="red-arrow"
                   depressed
                   :style="{ 'background-color': hover ? '#FFFFFF' : '#FFFFFF', 'font-size':'16px' }"
                   :href="`${path}/resources/${resource.link}`"
