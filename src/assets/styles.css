@@ -111,16 +111,6 @@ p.undp-typography.large-font{
   }
 }
 
-caption.undp-typography, h1.undp-typography, h2.undp-typography, h3.undp-typography, h4.undp-typography, h5.undp-typography, h6.undp-typography {
-  margin: 0 0 0.75rem;
-  padding: 0;
-}
-@media(min-width:48em) {
-  caption.undp-typography, h1.undp-typography, h2.undp-typography, h3.undp-typography, h4.undp-typography, h5.undp-typography, h6.undp-typography.undp-typography.undp-typography.undp-typography.undp-typography {
-    margin-bottom: 1rem;
-  }
-}
-
 h1.undp-typography {
   font-size: 2.938rem;
   font-weight: 700;
@@ -177,16 +167,6 @@ h5.undp-typography {
   h1.undp-typography {
     font-size: 5.125rem;
   }
-  blockquote.undp-typography {
-    font-size: 2.188rem;
-    line-height: 1.15;
-  }
-  cite.undp-typography {
-    font-size: 1.5rem;
-  }
-  code.undp-typography {
-    font-size: 1.25rem;
-  }
 }
 
 h6.undp-typography {
@@ -210,10 +190,7 @@ a.undp-style:hover {
   color: var(--black);
 }
 
-
-
-
-.undp-button {
+ .undp-button {
   align-items: center;
   background: transparent;
   border: none;
@@ -232,33 +209,6 @@ a.undp-style:hover {
 .undp-button:focus-visible {
   box-shadow: 0 0 4px #0468b1;
   outline: 0;
-}
-
-.undp-button.button-primary {
-  background-color: var(--dark-red);
-}
-
-.undp-button.button-primary:hover {
-  background-color: var(--red);
-}
-
-.undp-button.button-primary.button-arrow:after {
-  transition: .2s ease;
-  background: url(https://design.undp.org/static/media/chevron-right-black.f618eac3.svg) no-repeat left center;
-  color: var(--dark-red);
-  height: 20px;
-  margin-left: 0.75rem;
-  content: "";
-  width: 13px;
-}
-
-.undp-button.button-primary.button-arrow:hover:after {
-  transform: translate(70%, 0);
-}
-
-.undp-button.button-primary.button-arrow.disabled:after {
-  background: url(https://design.undp.org/static/media/chevron-right-white.c14d1d86.svg) no-repeat left center;
-  content: ""
 }
 
 .undp-button.button-secondary {
@@ -286,100 +236,4 @@ a.undp-style:hover {
 .undp-button.button-secondary.button-arrow.disabled:after {
   background: url(https://design.undp.org/static/media/chevron-right-white.c14d1d86.svg) no-repeat left center;
   content: ""
-}
-
-.undp-button.disabled {
-  background-color: var(--gray-400);
-  color: var(--gray-300);
-  pointer-events: none;
-}
-
-.undp-button.button-tertiary {
-  background-color: #FFF;
-  padding-left: 0;
-  padding-right: 0;
-  color: var(--black);
-}
-
-.undp-button.button-tertiary:hover {
-  color: var(--red);
-  background-color: #FFF;
-}
-
-.undp-button.button-tertiary.button-arrow:after {
-  transition: .2s ease;
-  background: url(https://design.undp.org/static/media/chevron-right-black.f618eac3.svg) no-repeat left center;
-  color: var(--dark-red);
-  height: 20px;
-  margin-left: 0.75rem;
-  content: "";
-  width: 13px;
-}
-
-.undp-button.button-tertiary.button-arrow:hover:after {
-  background: url(https://design.undp.org/icons/chevron-right.svg) no-repeat left center;
-  transform: translate(70%, 0);
-}
-
-.undp-button.button-tertiary.disabled {
-  color: var(--gray-400);
-}
-
-.undp-button.button-tertiary.disabled.button-arrow:after {
-  transition: .2s ease;
-  background: url(https://design.undp.org/static/media/chevron-right-black.f618eac3.svg) no-repeat left center;
-  height: 20px;
-  margin-left: 0.75rem;
-  content: "";
-  width: 13px;
-  opacity: 0.3;
-}
-
-.undp-input{
-  border: 2px solid var(--black);    
-  padding: 0.625rem;
-  font-size: 1rem;
-  appearance: none;
-  border-radius: 0;
-  line-height: 1.4;
-  color: var(--black);
-  width: 100%;
-  height: 3.25rem;
-}
-
-.undp-text-area{
-  border: 2px solid var(--white);    
-  padding: 0.625rem;
-  font-size: 1rem;
-  appearance: none;
-  border-radius: 0;
-  line-height: 1.4;
-  color: var(--black);
-  width: 100%;
-}
-
-.undp-input:hover{
-  border: 2px solid var(--blue-700) !important; 
-}
-
-.undp-input:focus{
-  border: 2px solid var(--blue-700) !important; 
-  box-shadow: 0 0 4px #0468b1 !important;
-  outline: 0 !important;
-}
-
-.undp-input:focus-visible{
-  border: 2px solid var(--blue-700) !important; 
-  box-shadow: 0 0 4px #0468b1 !important;
-  outline: 0 !important;
-}
-
-.undp-text-area:hover{
-  border: 2px solid var(--blue-700); 
-}
-
-.undp-text-area:focus{
-  border: 2px solid var(--blue-700); 
-  box-shadow: 0 0 4px var(--blue-700);
-  outline: 0;
 }

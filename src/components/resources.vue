@@ -101,6 +101,9 @@
 .resources-container {
   min-height: 100vh;
 }
+.v-sheet.v-card {
+  border-radius: 0px;
+}
 @media (min-height:800px) {
     .resources-block {
       margin-top: 5vh

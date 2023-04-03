@@ -103,17 +103,12 @@
   margin: auto;
   position: relative;
 }
-/*.top-content_input .v-input__slot {
-  border: 3px solid var(--white);
-  border-bottom : 2px solid var(--white);
-}
-.top-content_input .v-select--is-menu-active .v-input__slot {
-  background: rgba(255,255,255, 1) !important;
-}
-*/
 .v-text-field > .v-input__control > .v-input__slot::after{
   border: 0px !important;
   box-shadow: none !important;
+}
+.v-text-field > .v-input__control > .v-input__slot::before{
+  border: 0px;
 }
 .v-text-field.v-select .v-input__slot {
   border-radius: 0;
@@ -142,6 +137,7 @@
   margin-left: auto;
   color: #fff !important;
 }
+
 .header {
   min-height: 100vh;
   position: relative;
