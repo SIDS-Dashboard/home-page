@@ -156,7 +156,7 @@ export default {
   }
   .about-block .v-expansion-panel-header {
     font-weight: 400;
-    font-size: 25px;
+    font-size: 1.3rem;
     line-height: 114.2%;
     color: #000000;
     padding: 20px 0 24px;
